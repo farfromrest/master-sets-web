@@ -10,6 +10,23 @@ type CardData = {
   variants: string[]
 }
 
+export type TrackedSetSummary = {
+  setCode: string
+  setName: string
+  logoUrl: string | null
+  owned: number
+  total: number
+}
+
+type AllTrackedSetRow = {
+  set_code: string
+  sets: {
+    set_name: string
+    logo_url: string | null
+    total_slots: number
+  }
+}
+
 export type Slot = {
   slotId: string
   cardId: string
@@ -45,7 +62,7 @@ export default async function BinderPage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
 
-  const [{ data: trackedSet }, { data: setMeta }, { data: ownedRows }] = await Promise.all([
+  const [{ data: trackedSet }, { data: setMeta }, { data: ownedRows }, { data: allTrackedSetRows }, { data: allOwnedSlots }] = await Promise.all([
     supabase
       .from('tracked_sets')
       .select('column_count, focus, is_list')
@@ -62,7 +79,27 @@ export default async function BinderPage({
       .select('slot_id')
       .eq('user_id', user.id)
       .eq('set_code', setCode),
+    supabase
+      .from('tracked_sets')
+      .select('set_code, sets(set_name, logo_url, total_slots)')
+      .eq('user_id', user.id),
+    supabase
+      .from('owned_slots')
+      .select('set_code')
+      .eq('user_id', user.id),
   ])
+
+  const ownedBySet: Record<string, number> = {}
+  for (const row of allOwnedSlots ?? []) {
+    ownedBySet[row.set_code] = (ownedBySet[row.set_code] ?? 0) + 1
+  }
+  const trackedSets: TrackedSetSummary[] = ((allTrackedSetRows ?? []) as unknown as AllTrackedSetRow[]).map((ts) => ({
+    setCode: ts.set_code,
+    setName: ts.sets.set_name,
+    logoUrl: ts.sets.logo_url,
+    owned: ownedBySet[ts.set_code] ?? 0,
+    total: ts.sets.total_slots,
+  }))
 
   if (!trackedSet) redirect('/dashboard')
 
@@ -75,6 +112,7 @@ export default async function BinderPage({
       setCode={setCode}
       setName={setMeta?.set_name ?? setCode}
       logoUrl={setMeta?.logo_url ?? null}
+      trackedSets={trackedSets}
       slots={buildSlots(cards)}
       ownedSlotIds={(ownedRows ?? []).map((r) => r.slot_id)}
       columnCount={trackedSet.column_count}

@@ -6,7 +6,7 @@ import { applyChanges } from '@/app/actions/slots'
 import { updateTrackedSetPreferences } from '@/app/actions/sets'
 import { CardCell, EmptyPocket } from './CardCell'
 import { CardDetail } from './CardDetail'
-import type { Slot } from './page'
+import type { Slot, TrackedSetSummary } from './page'
 
 type Filter = 'all' | 'missing' | 'collected'
 type Mode = 'browse' | 'mark'
@@ -21,6 +21,7 @@ export function BinderView({
   setCode,
   setName,
   logoUrl,
+  trackedSets,
   slots,
   ownedSlotIds,
   columnCount,
@@ -30,6 +31,7 @@ export function BinderView({
   setCode: string
   setName: string
   logoUrl: string | null
+  trackedSets: TrackedSetSummary[]
   slots: Slot[]
   ownedSlotIds: string[]
   columnCount: number
@@ -46,6 +48,7 @@ export function BinderView({
   const [openSlotIdx, setOpenSlotIdx] = useState<number | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
   const [viewMenuOpen, setViewMenuOpen] = useState(false)
+  const [switcherOpen, setSwitcherOpen] = useState(false)
   const [copySuccess, setCopySuccess] = useState(false)
   const [checklistCopySuccess, setChecklistCopySuccess] = useState(false)
   const [confirmAction, setConfirmAction] = useState<'mark-all' | 'clear-all' | null>(null)
@@ -299,13 +302,20 @@ export function BinderView({
               >
                 ←
               </Link>
-              <div className="absolute inset-x-0 flex justify-center pointer-events-none">
+              <button
+                onClick={() => setSwitcherOpen(true)}
+                className="absolute inset-x-0 flex justify-center items-center gap-1.5"
+                aria-label="Switch set"
+              >
                 {logoUrl ? (
-                  <img src={logoUrl} alt={setName} className="max-h-[30px] max-w-[160px] w-auto object-contain" />
+                  <img src={logoUrl} alt={setName} className="max-h-[30px] max-w-[150px] w-auto object-contain" />
                 ) : (
                   <span className="text-sm font-medium text-text-primary truncate">{setName}</span>
                 )}
-              </div>
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="text-text-secondary flex-shrink-0 mt-0.5">
+                  <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
               <div className="flex-1" />
 
               <button
@@ -691,6 +701,59 @@ export function BinderView({
                 </button>
               </div>
 
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Set switcher bottom sheet */}
+      {switcherOpen && (
+        <>
+          <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm" onClick={() => setSwitcherOpen(false)} />
+          <div className="fixed bottom-0 left-0 right-0 z-50 bg-binder-elevated rounded-t-2xl border-t border-white/[.08] shadow-2xl">
+            <div className="flex justify-center pt-3 pb-1">
+              <div className="w-10 h-1 rounded-full bg-white/20" />
+            </div>
+            <div className="px-4 pb-8 pt-2 max-h-[70vh] overflow-y-auto space-y-1">
+              {trackedSets.map((ts) => {
+                const isCurrent = ts.setCode === setCode
+                const pct = ts.total > 0 ? Math.round((ts.owned / ts.total) * 100) : 0
+                return (
+                  <Link
+                    key={ts.setCode}
+                    href={`/binder/${ts.setCode}`}
+                    onClick={() => setSwitcherOpen(false)}
+                    className={`flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all ${
+                      isCurrent ? 'bg-brand-cyan/10 border border-brand-cyan/20' : 'hover:bg-white/[.04]'
+                    }`}
+                  >
+                    {ts.logoUrl && (
+                      <div className="h-7 w-12 flex-shrink-0">
+                        <img src={ts.logoUrl} alt={ts.setName} className="h-full w-full object-contain" />
+                      </div>
+                    )}
+                    <div className="flex-1 min-w-0 space-y-1.5">
+                      <span className={`text-sm font-medium truncate block ${isCurrent ? 'text-brand-cyan' : 'text-text-primary'}`}>
+                        {ts.setName}
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <div className="flex-1 h-1 rounded-full bg-white/[.08] overflow-hidden">
+                          <div
+                            className="h-full rounded-full bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan"
+                            style={{ width: `${pct}%` }}
+                          />
+                        </div>
+                        <span className="text-xs text-text-secondary flex-shrink-0 tabular-nums">{ts.owned}/{ts.total}</span>
+                      </div>
+                    </div>
+                    {isCurrent && (
+                      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" className="flex-shrink-0 text-brand-cyan">
+                        <path d="M1 5l3.2 3.2L11 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </>
