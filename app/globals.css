@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surfaces */
+  --color-binder-bg: rgb(15, 18, 26);
+  --color-binder-surface: rgb(26, 28, 38);
+  --color-binder-elevated: rgb(36, 38, 51);
+
+  /* Text */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: hsl(0, 0%, 55%);
+
+  /* Brand accents */
+  --color-brand-cyan: hsl(187, 88%, 59%);
+  --color-brand-blue: hsl(223, 76%, 59%);
+  --color-brand-violet: hsl(270, 67%, 64%);
+  --color-brand-magenta: hsl(317, 73%, 63%);
+
+  /* Holographic palette */
+  --color-holo-cyan: hsl(187, 65%, 57%);
+  --color-holo-blue: hsl(223, 55%, 56%);
+  --color-holo-indigo: hsl(245, 41%, 52%);
+  --color-holo-violet: hsl(270, 43%, 56%);
+  --color-holo-magenta: hsl(317, 47%, 59%);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: rgb(15, 18, 26);
+  color: #ffffff;
+}
