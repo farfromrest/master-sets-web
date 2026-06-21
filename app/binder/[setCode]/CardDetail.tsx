@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useEffect, useRef, useState, useTransition } from 'react'
+import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { toggleSlotOwned } from '@/app/actions/slots'
 import type { Slot } from './page'
 
@@ -88,28 +89,28 @@ export function CardDetail({
       {/* Close */}
       <button
         onClick={onClose}
-        className="absolute top-3 right-3 p-2 text-text-secondary hover:text-text-primary transition-colors text-xl leading-none"
+        className="absolute top-3 right-3 p-2 text-text-secondary hover:text-text-primary transition-colors"
         aria-label="Close card detail"
       >
-        ✕
+        <X size={20} />
       </button>
 
       {/* Nav arrows */}
       <button
         onClick={() => navigate('prev')}
         disabled={currentIdx === 0}
-        className="absolute left-2 top-1/2 -translate-y-1/2 text-2xl text-text-secondary hover:text-text-primary disabled:opacity-20 transition-colors px-4 py-6"
+        className="absolute left-2 top-1/2 -translate-y-1/2 text-text-secondary hover:text-text-primary disabled:opacity-20 transition-colors px-4 py-6"
         aria-label="Previous card"
       >
-        ‹
+        <ChevronLeft size={32} />
       </button>
       <button
         onClick={() => navigate('next')}
         disabled={currentIdx === slots.length - 1}
-        className="absolute right-2 top-1/2 -translate-y-1/2 text-2xl text-text-secondary hover:text-text-primary disabled:opacity-20 transition-colors px-4 py-6"
+        className="absolute right-2 top-1/2 -translate-y-1/2 text-text-secondary hover:text-text-primary disabled:opacity-20 transition-colors px-4 py-6"
         aria-label="Next card"
       >
-        ›
+        <ChevronRight size={32} />
       </button>
 
       {/* Card + glow */}

@@ -6,6 +6,7 @@ import { applyChanges } from '@/app/actions/slots'
 import { updateTrackedSetPreferences } from '@/app/actions/sets'
 import { CardCell, EmptyPocket } from './CardCell'
 import { CardDetail } from './CardDetail'
+import { ArrowLeft, ChevronDown, Ellipsis, Search, SlidersHorizontal, X } from 'lucide-react'
 import type { Slot, TrackedSetSummary } from './page'
 
 type Filter = 'all' | 'missing' | 'collected'
@@ -272,7 +273,7 @@ export function BinderView({
                 className="text-text-secondary hover:text-text-primary transition-colors flex-shrink-0"
                 aria-label="Exit search"
               >
-                ←
+                <ArrowLeft size={18} />
               </button>
               <input
                 ref={searchInputRef}
@@ -289,22 +290,27 @@ export function BinderView({
                   className="text-text-secondary hover:text-text-primary transition-colors flex-shrink-0 text-xs"
                   aria-label="Clear search"
                 >
-                  ✕
+                  <X size={14} />
                 </button>
               )}
             </div>
           ) : (
-            <div className="relative flex items-center gap-3">
+            <div className="grid items-center gap-2" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
+              {/* Left: home link */}
               <Link
                 href="/dashboard"
-                className="p-2 -m-2 text-text-secondary hover:text-text-primary transition-colors"
+                className="p-2 -m-2 justify-self-start"
                 aria-label="Back to dashboard"
               >
-                ←
+                <span className="text-sm font-semibold bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan bg-clip-text text-transparent">
+                  MasterSets
+                </span>
               </Link>
+
+              {/* Center: set switcher */}
               <button
                 onClick={() => setSwitcherOpen(true)}
-                className="absolute inset-x-0 flex justify-center items-center gap-1.5"
+                className="flex items-center gap-1.5"
                 aria-label="Switch set"
               >
                 {logoUrl ? (
@@ -312,44 +318,34 @@ export function BinderView({
                 ) : (
                   <span className="text-sm font-medium text-text-primary truncate">{setName}</span>
                 )}
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="text-text-secondary flex-shrink-0 mt-0.5">
-                  <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-              <div className="flex-1" />
-
-              <button
-                onClick={() => setSearchActive(true)}
-                className="p-2 text-text-secondary hover:text-text-primary transition-colors"
-                aria-label="Search cards"
-              >
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                  <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M10 10l3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
+                <ChevronDown size={14} className="text-text-secondary flex-shrink-0" />
               </button>
 
-              <button
-                onClick={() => setViewMenuOpen(true)}
-                className={`p-2 transition-colors ${viewMenuOpen ? 'text-brand-cyan' : 'text-text-secondary hover:text-text-primary'}`}
-                aria-label="View options"
-              >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <line x1="2" y1="4" x2="14" y2="4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  <line x1="2" y1="8" x2="14" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  <line x1="2" y1="12" x2="14" y2="12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  <circle cx="5" cy="4" r="1.5" fill="var(--color-binder-bg)" stroke="currentColor" strokeWidth="1.5" />
-                  <circle cx="10" cy="8" r="1.5" fill="var(--color-binder-bg)" stroke="currentColor" strokeWidth="1.5" />
-                  <circle cx="6" cy="12" r="1.5" fill="var(--color-binder-bg)" stroke="currentColor" strokeWidth="1.5" />
-                </svg>
-              </button>
+              {/* Right: actions */}
+              <div className="flex items-center justify-end gap-1">
+                <button
+                  onClick={() => setSearchActive(true)}
+                  className="p-2 text-text-secondary hover:text-text-primary transition-colors"
+                  aria-label="Search cards"
+                >
+                  <Search size={16} />
+                </button>
 
-              <button
-                onClick={enterMarkMode}
-                className="text-xs font-medium text-brand-cyan border border-brand-cyan/30 rounded-md px-3 py-1.5 hover:bg-brand-cyan/10 transition-colors"
-              >
-                Mark
-              </button>
+                <button
+                  onClick={() => setViewMenuOpen(true)}
+                  className={`p-2 transition-colors ${viewMenuOpen ? 'text-brand-cyan' : 'text-text-secondary hover:text-text-primary'}`}
+                  aria-label="View options"
+                >
+                  <SlidersHorizontal size={16} />
+                </button>
+
+                <button
+                  onClick={enterMarkMode}
+                  className="text-xs font-medium text-brand-cyan border border-brand-cyan/30 rounded-md px-3 py-1.5 hover:bg-brand-cyan/10 transition-colors"
+                >
+                  Mark
+                </button>
+              </div>
             </div>
           )
         ) : (
@@ -383,7 +379,7 @@ export function BinderView({
                 className="text-xs text-text-secondary hover:text-text-primary transition-colors disabled:opacity-50 px-1"
                 aria-label="Mark mode options"
               >
-                ⋯
+                <Ellipsis size={18} />
               </button>
               {menuOpen && (
                 <>

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
+import { Settings } from 'lucide-react'
 import { createClient } from '@/utils/supabase/server'
 import { SignOutButton } from './SignOutButton'
 
@@ -89,22 +90,10 @@ export default async function DashboardPage() {
           </Link>
           <Link
             href="/settings"
-            className="text-text-secondary hover:text-text-primary transition-colors"
+            className="p-2 -m-2 text-text-secondary hover:text-text-primary transition-colors"
             aria-label="Settings"
           >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path
-                d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M13.3 9.7c.04-.23.07-.46.07-.7s-.03-.47-.07-.7l1.5-1.17a.37.37 0 0 0 .09-.47l-1.42-2.46a.37.37 0 0 0-.45-.16l-1.77.71a5.2 5.2 0 0 0-1.2-.7L9.8 2.1A.36.36 0 0 0 9.44 1.8H6.56a.36.36 0 0 0-.36.3l-.27 1.88c-.43.18-.83.43-1.2.7l-1.77-.71a.36.36 0 0 0-.45.16L1.09 6.59a.36.36 0 0 0 .09.47l1.5 1.17c-.04.23-.07.47-.07.7s.03.47.07.7L1.18 10.8a.37.37 0 0 0-.09.47l1.42 2.46c.09.16.28.22.45.16l1.77-.71c.37.27.77.52 1.2.7l.27 1.88c.04.19.2.3.36.3h2.88c.17 0 .32-.11.36-.3l.27-1.88c.43-.18.83-.43 1.2-.7l1.77.71c.17.06.36 0 .45-.16l1.42-2.46a.37.37 0 0 0-.09-.47l-1.5-1.17Z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <Settings size={18} />
           </Link>
           <SignOutButton />
         </div>

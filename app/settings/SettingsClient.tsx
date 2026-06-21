@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState, useTransition } from 'react'
+import { ArrowLeft } from 'lucide-react'
 import { updateDefaultLayout, resetUserData } from '@/app/actions/settings'
 import { signOut } from '@/app/actions/auth'
 
@@ -39,10 +40,10 @@ export function SettingsClient({
       <header className="sticky top-0 z-10 bg-binder-bg/90 backdrop-blur border-b border-white/[.06] px-4 py-3 flex items-center gap-3">
         <Link
           href="/dashboard"
-          className="text-text-secondary hover:text-text-primary transition-colors"
+          className="p-2 -m-2 text-text-secondary hover:text-text-primary transition-colors"
           aria-label="Back to dashboard"
         >
-          ←
+          <ArrowLeft size={18} />
         </Link>
         <span className="flex-1 text-sm font-medium text-text-primary">Settings</span>
       </header>
