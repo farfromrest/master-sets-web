@@ -109,6 +109,7 @@ export function SetCatalogue({
                       fill
                       className="object-contain"
                       sizes="56px"
+                      unoptimized
                     />
                   </div>
 

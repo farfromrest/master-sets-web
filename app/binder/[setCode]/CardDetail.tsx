@@ -124,6 +124,7 @@ export function CardDetail({
                   sizes="(max-width: 384px) calc(100vw - 76px), 308px"
                   className="object-cover"
                   priority
+                  unoptimized
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-holo-cyan/30 via-holo-violet/30 to-holo-magenta/30" />

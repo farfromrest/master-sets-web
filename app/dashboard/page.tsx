@@ -144,6 +144,7 @@ export default async function DashboardPage() {
                             fill
                             className="object-contain"
                             sizes="56px"
+                            unoptimized
                           />
                         </div>
 

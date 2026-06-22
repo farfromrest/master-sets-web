@@ -101,6 +101,10 @@ def optimize_card_image(raw: bytes) -> bytes:
     return buf.getvalue()
 
 
+def supabase_logo_url(supabase_url: str, set_code: str) -> str:
+    return f"{supabase_url}/storage/v1/object/public/logos/{set_code}.png"
+
+
 def supabase_image_url(supabase_url: str, set_code: str, card_id: str) -> str:
     return f"{supabase_url}/storage/v1/object/public/card-images/{set_code}/{card_id}.webp"
 
@@ -213,6 +217,7 @@ def main():
 
         # ── Upsert set row ─────────────────────────────────────────────────────
         row = to_snake(entry)
+        row['logo_url'] = supabase_logo_url(url, code)
         if args.dry_run:
             print(f"  [dry-run] would upsert: {row}")
         else:

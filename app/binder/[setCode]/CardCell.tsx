@@ -57,6 +57,7 @@ export function CardCell({ slot, isOwned, mode, dimmed, changed, onClick }: Prop
               sizes="(max-width: 640px) 30vw, 180px"
               className="object-cover"
               loading="lazy"
+              unoptimized
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-holo-cyan/20 via-holo-violet/20 to-holo-magenta/20" />
