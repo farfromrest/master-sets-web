@@ -8,22 +8,30 @@ the sibling PocketBinder repo), then:
   • Uploads per-set card JSON to Supabase Storage (cards/{setCode}.json)
   • Uploads set logos to Supabase Storage (logos/{setCode}.png)
 
+With --images:
+  • Downloads each card image from its source URL
+  • Resizes to max 400 px wide and converts to WebP (quality 82)
+  • Uploads to Supabase Storage (card-images/{setCode}/{cardId}.webp)
+  • Rewrites imageUrl in the card JSON to the Supabase Storage URL
+  • Re-uploads the updated card JSON
+
 Requires:
   SUPABASE_URL         — project URL (e.g. https://xxx.supabase.co)
   SUPABASE_SERVICE_KEY — service role key from Dashboard → Settings → API
 
 Usage:
   python3 scripts/upload_catalogue.py
+  python3 scripts/upload_catalogue.py --images
   python3 scripts/upload_catalogue.py --data-dir /path/to/PocketBinder/data
-  python3 scripts/upload_catalogue.py --sets sv1,sv2
-  python3 scripts/upload_catalogue.py --dry-run
+  python3 scripts/upload_catalogue.py --sets sv1,sv2 --images
+  python3 scripts/upload_catalogue.py --dry-run --images
 """
 
 import argparse
+import io
 import json
 import os
 import sys
-import tempfile
 import urllib.request
 from pathlib import Path
 
@@ -43,12 +51,15 @@ def _unverified_context(*args, **kwargs):
 ssl.create_default_context         = _unverified_context
 ssl._create_default_https_context  = _unverified_context
 
+from PIL import Image
 from supabase import create_client, Client
 
 
 # ── Defaults ───────────────────────────────────────────────────────────────────
 
 DEFAULT_DATA_DIR = Path(__file__).parent.parent.parent / "PocketBinder" / "data"
+IMAGE_MAX_WIDTH  = 400
+IMAGE_QUALITY    = 82
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -69,14 +80,84 @@ def to_snake(entry: dict) -> dict:
     }
 
 
-def fetch_logo_bytes(url: str) -> bytes | None:
+def fetch_bytes(url: str, label: str = "resource") -> bytes | None:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "MasterSets/1.0"})
-        with urllib.request.urlopen(req, timeout=20) as r:
+        with urllib.request.urlopen(req, timeout=30) as r:
             return r.read()
     except Exception as e:
-        print(f"    ✗ download failed: {e}")
+        print(f"    ✗ {label} download failed: {e}")
         return None
+
+
+def optimize_card_image(raw: bytes) -> bytes:
+    """Resize to max IMAGE_MAX_WIDTH wide and encode as WebP."""
+    img = Image.open(io.BytesIO(raw)).convert("RGB")
+    if img.width > IMAGE_MAX_WIDTH:
+        ratio = IMAGE_MAX_WIDTH / img.width
+        img = img.resize((IMAGE_MAX_WIDTH, int(img.height * ratio)), Image.LANCZOS)
+    buf = io.BytesIO()
+    img.save(buf, format="WEBP", quality=IMAGE_QUALITY)
+    return buf.getvalue()
+
+
+def supabase_image_url(supabase_url: str, set_code: str, card_id: str) -> str:
+    return f"{supabase_url}/storage/v1/object/public/card-images/{set_code}/{card_id}.webp"
+
+
+def process_images(
+    cards: list[dict],
+    set_code: str,
+    supabase: Client,
+    supabase_url: str,
+    dry_run: bool,
+) -> list[dict]:
+    """
+    Download, optimize, and upload images for all cards in a set.
+    Returns a new card list with imageUrl rewritten to Supabase Storage URLs.
+    """
+    ok = err = skipped = 0
+    updated_cards = []
+
+    for card in cards:
+        card_id   = card["id"]
+        source_url = card.get("imageUrl")
+        target_url = supabase_image_url(supabase_url, set_code, card_id)
+        storage_path = f"{set_code}/{card_id}.webp"
+
+        if not source_url:
+            updated_cards.append(card)
+            skipped += 1
+            continue
+
+        raw = fetch_bytes(source_url, label=f"image {card_id}")
+        if raw is None:
+            updated_cards.append(card)
+            err += 1
+            continue
+
+        webp = optimize_card_image(raw)
+
+        if not dry_run:
+            try:
+                supabase.storage.from_("card-images").upload(
+                    storage_path,
+                    webp,
+                    {"content-type": "image/webp", "upsert": "true"},
+                )
+            except Exception as e:
+                print(f"    ✗ upload failed for {card_id}: {e}")
+                updated_cards.append(card)
+                err += 1
+                continue
+
+        updated_cards.append({**card, "imageUrl": target_url})
+        ok += 1
+
+    kb_saved = ok  # rough placeholder; actual savings vary
+    size_note = f"~{ok * IMAGE_MAX_WIDTH * IMAGE_QUALITY // 8 // 1024} KB est." if ok else ""
+    print(f"  Images: {ok} uploaded, {skipped} skipped (no URL), {err} errors  {size_note}")
+    return updated_cards
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -90,6 +171,8 @@ def main():
                         help="Comma-separated set codes to process (default: all)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Print what would happen without uploading")
+    parser.add_argument("--images", action="store_true",
+                        help="Download, optimize, and upload card images to Supabase Storage")
     parser.add_argument("--skip-cards", action="store_true",
                         help="Skip uploading card JSON files")
     parser.add_argument("--skip-logos", action="store_true",
@@ -141,14 +224,24 @@ def main():
                 print(f"  ✗ upsert failed: {e}")
                 db_err += 1
 
-        # ── Upload card JSON ───────────────────────────────────────────────────
+        # ── Process card JSON (and optionally images) ──────────────────────────
         if not args.skip_cards:
             card_file = sets_dir / f"{code}.json"
             if not card_file.exists():
                 print(f"  ⚠️  card file not found: {card_file}")
                 card_err += 1
             else:
-                card_data = card_file.read_bytes()
+                cards = json.loads(card_file.read_text(encoding="utf-8"))
+
+                if args.images:
+                    print(f"  Downloading and optimizing {len(cards)} card images…")
+                    if args.dry_run:
+                        print(f"  [dry-run] would download/optimize/upload images for {len(cards)} cards")
+                    else:
+                        cards = process_images(cards, code, supabase, url, dry_run=False)
+
+                card_data = json.dumps(cards, ensure_ascii=False).encode("utf-8")
+
                 if args.dry_run:
                     print(f"  [dry-run] would upload cards/{code}.json ({len(card_data)} bytes)")
                 else:
@@ -174,7 +267,7 @@ def main():
                 print(f"  Using local logo ({logo_path.stat().st_size / 1024:.0f} KB)")
             elif logo_url:
                 print(f"  Downloading logo from {logo_url}…", end=" ", flush=True)
-                logo_bytes = fetch_logo_bytes(logo_url)
+                logo_bytes = fetch_bytes(logo_url, label="logo")
                 if logo_bytes:
                     print(f"{len(logo_bytes) / 1024:.0f} KB")
             else:
