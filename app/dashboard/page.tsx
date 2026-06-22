@@ -78,9 +78,18 @@ export default async function DashboardPage() {
   return (
     <div className="min-h-screen bg-binder-bg">
       <header className="sticky top-0 z-10 bg-binder-bg/90 backdrop-blur border-b border-white/[.06] px-4 py-3 flex items-center justify-between">
-        <h1 className="text-sm font-semibold bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan bg-clip-text text-transparent">
-          MasterSets
-        </h1>
+        <div className="flex items-center gap-2">
+          <Image
+            src="/icon.png"
+            alt="MasterSets"
+            width={40}
+            height={40}
+            className="flex-shrink-0"
+          />
+          <h1 className="text-sm font-semibold bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan bg-clip-text text-transparent">
+            MasterSets
+          </h1>
+        </div>
         <div className="flex items-center gap-4">
           <Link
             href="/sets"

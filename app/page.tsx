@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, type FormEvent } from 'react'
+import Image from 'next/image'
 import { createClient } from '@/utils/supabase/client'
 
 export default function LandingPage() {
@@ -36,9 +37,18 @@ export default function LandingPage() {
     <main className="flex min-h-screen flex-col items-center justify-center px-6">
       <div className="w-full max-w-sm space-y-8">
         <div className="space-y-2 text-center">
-          <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-brand-magenta via-brand-violet via-brand-blue to-brand-cyan bg-clip-text text-transparent">
-            MasterSets
-          </h1>
+          <div className="flex items-center justify-center gap-3">
+            <Image
+              src="/icon.png"
+              alt="MasterSets"
+              width={40}
+              height={40}
+              className="flex-shrink-0"
+            />
+            <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-brand-magenta via-brand-violet via-brand-blue to-brand-cyan bg-clip-text text-transparent">
+              MasterSets
+            </h1>
+          </div>
           <p className="text-text-secondary text-sm">
             Track your Pokémon TCG Master Set collections.
           </p>

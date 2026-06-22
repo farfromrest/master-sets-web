@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState, useTransition } from 'react'
 import { applyChanges } from '@/app/actions/slots'
@@ -299,9 +300,16 @@ export function BinderView({
               {/* Left: home link */}
               <Link
                 href="/dashboard"
-                className="p-2 -m-2 justify-self-start"
+                className="-m-2 p-2 justify-self-start flex items-center gap-2"
                 aria-label="Back to dashboard"
               >
+                <Image
+                  src="/icon.png"
+                  alt="MasterSets"
+                  width={40}
+                  height={40}
+                  className="flex-shrink-0"
+                />
                 <span className="text-sm font-semibold bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan bg-clip-text text-transparent">
                   MasterSets
                 </span>
