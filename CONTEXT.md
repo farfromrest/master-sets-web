@@ -1,4 +1,4 @@
-# Master Sets Web
+# Master Setting
 
 A web app for tracking Pokémon TCG Master Set collections. Users track which slots they own across one or more sets, working toward completion.
 

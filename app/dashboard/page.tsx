@@ -81,13 +81,13 @@ export default async function DashboardPage() {
         <div className="flex items-center gap-2">
           <Image
             src="/icon.png"
-            alt="MasterSets"
+            alt="Master Setting"
             width={40}
             height={40}
             className="flex-shrink-0"
           />
           <h1 className="text-sm font-semibold bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan bg-clip-text text-transparent">
-            MasterSets
+            Master Setting
           </h1>
         </div>
         <div className="flex items-center gap-4">

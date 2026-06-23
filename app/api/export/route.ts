@@ -40,7 +40,7 @@ export async function GET() {
   return new NextResponse(JSON.stringify(exportData, null, 2), {
     headers: {
       'Content-Type': 'application/json',
-      'Content-Disposition': 'attachment; filename="mastersets-export.json"',
+      'Content-Disposition': 'attachment; filename="master-setting-export.json"',
     },
   })
 }

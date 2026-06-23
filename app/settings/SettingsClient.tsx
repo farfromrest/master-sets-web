@@ -100,7 +100,7 @@ export function SettingsClient({
           <p className="text-[10px] font-semibold text-text-secondary uppercase tracking-widest">About</p>
           <div className="rounded-xl bg-binder-surface border border-white/[.06] overflow-hidden">
             <div className="px-4 py-4 space-y-1">
-              <p className="text-sm font-medium text-text-primary">MasterSets</p>
+              <p className="text-sm font-medium text-text-primary">Master Setting</p>
               <p className="text-xs text-text-secondary">A hobby tracker for Pokémon TCG Master Set collectors.</p>
             </div>
             <div className="h-px bg-white/[.06]" />

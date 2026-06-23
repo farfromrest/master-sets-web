@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MasterSets",
-  description: "Track your Pokémon TCG Master Set collections.",
+  title: "Master Setting",
+  description: "Track your Pokémon TCG master sets.",
   manifest: "/manifest.json",
 };
 

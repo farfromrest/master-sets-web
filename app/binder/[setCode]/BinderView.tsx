@@ -305,13 +305,13 @@ export function BinderView({
               >
                 <Image
                   src="/icon.png"
-                  alt="MasterSets"
+                  alt="Master Setting"
                   width={40}
                   height={40}
                   className="flex-shrink-0"
                 />
                 <span className="text-sm font-semibold bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan bg-clip-text text-transparent">
-                  MasterSets
+                  Master Setting
                 </span>
               </Link>
 

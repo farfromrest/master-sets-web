@@ -33,13 +33,13 @@ export default function LandingPage() {
           <div className="flex items-center justify-center gap-3">
             <Image
               src="/icon.png"
-              alt="MasterSets"
+              alt="Master Setting"
               width={40}
               height={40}
               className="flex-shrink-0"
             />
             <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-brand-magenta via-brand-violet via-brand-blue to-brand-cyan bg-clip-text text-transparent">
-              MasterSets
+              Master Setting
             </h1>
           </div>
           <p className="text-text-secondary text-sm">
