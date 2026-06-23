@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
-import { Settings } from 'lucide-react'
+import { BadgeCheck, LayoutGrid, Plus, Settings } from 'lucide-react'
 import { createClient } from '@/utils/supabase/server'
 import { SignOutButton } from './SignOutButton'
 
@@ -110,12 +110,25 @@ export default async function DashboardPage() {
 
       <main className="max-w-2xl mx-auto px-4 py-8">
         {groups.length === 0 ? (
-          <div className="text-center py-24 space-y-3">
-            <p className="text-text-primary font-medium">No sets tracked yet</p>
-            <p className="text-text-secondary text-sm">
-              <Link href="/sets" className="text-brand-cyan hover:underline">Add a set</Link>{' '}
-              to start tracking your collection.
-            </p>
+          <div className="text-center py-24 flex flex-col items-center gap-6">
+            <div className="relative flex items-center justify-center w-28 h-28">
+              <div className="absolute inset-0 rounded-full bg-brand-violet/40 blur-3xl" />
+              <div className="absolute inset-0 rounded-full bg-brand-cyan/20 blur-2xl" />
+              <LayoutGrid size={56} strokeWidth={0.75} className="relative text-brand-violet" />
+            </div>
+            <div className="space-y-2">
+              <p className="text-lg font-semibold text-text-primary">Start Your Collection</p>
+              <p className="text-sm text-text-secondary">
+                Track a Pokémon TCG set to start logging your master set binder.
+              </p>
+            </div>
+            <Link
+              href="/sets"
+              className="inline-flex items-center gap-2 bg-brand-cyan text-binder-bg font-semibold rounded-xl px-6 py-3 hover:opacity-90 transition-opacity"
+            >
+              <Plus size={16} />
+              Add Your First Set
+            </Link>
           </div>
         ) : (
           <div className="space-y-8">
@@ -149,29 +162,30 @@ export default async function DashboardPage() {
                         </div>
 
                         <div className="flex-1 min-w-0 space-y-1.5">
-                          <div className="flex items-center gap-2">
-                            <span className="text-sm font-medium text-text-primary truncate">
-                              {ts.sets.set_name}
+                          <span className="block text-sm font-semibold text-text-primary truncate">
+                            {ts.sets.set_name}
+                          </span>
+                          <div className="flex items-center">
+                            <span className="text-xs text-text-secondary tabular-nums">
+                              {owned} / {total} collected
                             </span>
-                            {done && (
-                              <span className="text-[10px] font-semibold text-brand-cyan border border-brand-cyan/40 rounded px-1.5 py-0.5 flex-shrink-0">
-                                COMPLETE
+                            <div className="flex-1" />
+                            {done ? (
+                              <span className="flex items-center gap-1 text-xs font-semibold text-brand-cyan flex-shrink-0">
+                                <BadgeCheck size={12} />
+                                Complete
+                              </span>
+                            ) : (
+                              <span className="text-xs text-text-secondary tabular-nums flex-shrink-0">
+                                {pct}%
                               </span>
                             )}
                           </div>
-                          <div className="flex items-center gap-2">
-                            <div className="flex-1 h-1 rounded-full bg-white/[.08] overflow-hidden">
-                              <div
-                                className="h-full rounded-full bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan transition-all"
-                                style={{ width: `${pct}%` }}
-                              />
-                            </div>
-                            <span className="text-xs text-text-secondary flex-shrink-0 tabular-nums">
-                              {owned} / {total}
-                            </span>
-                            <span className="text-xs text-text-secondary flex-shrink-0 tabular-nums w-8 text-right">
-                              {pct}%
-                            </span>
+                          <div className="h-1.5 rounded-full bg-white/[.08] overflow-hidden">
+                            <div
+                              className="h-full rounded-full bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan transition-all"
+                              style={{ width: `${pct}%` }}
+                            />
                           </div>
                         </div>
                       </Link>

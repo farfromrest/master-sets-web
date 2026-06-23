@@ -4,6 +4,39 @@ import Image from 'next/image'
 import { Sparkles, Tag } from 'lucide-react'
 import type { Slot } from './page'
 
+// Holo palette: cyan → blue → indigo → violet → magenta (matching iOS HoloPalette)
+const HOLO_HSL = [
+  [187, 65, 57],
+  [223, 55, 56],
+  [245, 41, 52],
+  [270, 43, 56],
+  [317, 47, 59],
+] as const
+
+function interpolateHolo(t: number): [number, number, number] {
+  const count = HOLO_HSL.length
+  const scaled = t * count
+  const lower = Math.floor(scaled) % count
+  const upper = (lower + 1) % count
+  const frac = scaled - Math.floor(scaled)
+  const [ah, as_, al] = HOLO_HSL[lower]
+  const [bh, bs, bl] = HOLO_HSL[upper]
+  return [ah + (bh - ah) * frac, as_ + (bs - as_) * frac, al + (bl - al) * frac]
+}
+
+function holoGradientStyle(cardId: string): React.CSSProperties {
+  let h = 0
+  for (let i = 0; i < cardId.length; i++) {
+    h = ((h << 5) - h + cardId.charCodeAt(i)) | 0
+  }
+  const offset = (Math.abs(h) % 1000) / 1000
+  const stops = [0, 0.25, 0.5, 0.75, 1.0].map(t => {
+    const [hue, sat, lit] = interpolateHolo((t + offset) % 1.0)
+    return `hsl(${Math.round(hue)},${Math.round(sat)}%,${Math.round(lit)}%)`
+  })
+  return { background: `linear-gradient(135deg, ${stops.join(', ')})` }
+}
+
 type Props = {
   slot: Slot
   isOwned: boolean
@@ -48,8 +81,14 @@ export function CardCell({ slot, isOwned, mode, dimmed, changed, onClick }: Prop
         }`}
         aria-label={`${slot.cardName}${slot.showVariantLabel ? ` (${slot.variant})` : ''}, ${isOwned ? 'collected' : 'missing'}`}
       >
-        <div className="absolute inset-0 bg-binder-elevated">
-          {slot.imageUrl ? (
+        {/* Holo placeholder — visible while image loads or when no URL */}
+        <div className="absolute inset-0" style={holoGradientStyle(slot.cardId)}>
+          {/* Sheen overlay matching iOS: cyan/20 → white/8 → clear */}
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(135deg, hsla(187,88%,59%,0.2) 0%, rgba(255,255,255,0.08) 25%, transparent 50%)' }}
+          />
+          {slot.imageUrl && (
             <Image
               src={slot.imageUrl}
               alt={slot.cardName}
@@ -59,8 +98,6 @@ export function CardCell({ slot, isOwned, mode, dimmed, changed, onClick }: Prop
               loading="lazy"
               unoptimized
             />
-          ) : (
-            <div className="w-full h-full bg-gradient-to-br from-holo-cyan/20 via-holo-violet/20 to-holo-magenta/20" />
           )}
         </div>
 
