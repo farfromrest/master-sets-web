@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Replace magic-link login UI with Sign in with Apple button
 

@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Build AuthService — Sign in with Apple → Supabase session
 

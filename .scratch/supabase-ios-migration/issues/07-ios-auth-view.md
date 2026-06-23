@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Add auth gate (AuthView shown when no session)
 

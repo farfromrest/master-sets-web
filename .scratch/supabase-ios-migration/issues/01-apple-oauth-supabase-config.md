@@ -1,4 +1,4 @@
-Status: ready-for-human
+Status: completed
 
 # Configure Sign in with Apple in Supabase + Apple Developer
 

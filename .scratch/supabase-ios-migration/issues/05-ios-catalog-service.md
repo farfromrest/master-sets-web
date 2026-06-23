@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Build CatalogService — replace SetCatalogStore with async Supabase fetching
 

@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import { Sparkles, Tag } from 'lucide-react'
 import type { Slot } from './page'

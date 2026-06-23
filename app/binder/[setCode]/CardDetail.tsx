@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import { useEffect, useRef, useState, useTransition } from 'react'
 import { CheckCircle2, ChevronLeft, ChevronRight, Circle, X } from 'lucide-react'
@@ -82,6 +80,7 @@ export function CardDetail({
   return (
     <div
       className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm"
+      aria-label={`${setName} card detail`}
       onClick={(e) => e.target === e.currentTarget && onClose()}
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}

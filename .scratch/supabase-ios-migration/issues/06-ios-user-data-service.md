@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Build UserDataService — tracked sets + owned slots via Supabase
 

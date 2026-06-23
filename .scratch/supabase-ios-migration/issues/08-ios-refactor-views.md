@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Refactor views — replace SwiftData bindings with service calls
 

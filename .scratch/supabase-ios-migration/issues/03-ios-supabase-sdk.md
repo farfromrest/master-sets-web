@@ -1,4 +1,4 @@
-Status: ready-for-agent
+Status: completed
 
 # Add Supabase Swift SDK via Swift Package Manager
 
