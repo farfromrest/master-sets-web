@@ -30,6 +30,7 @@ TARGET_WIDTH = 200
 LOGO_CANDIDATES = [
     "https://images.pokemontcg.io/{code}/logo.png",
     "https://images.scrydex.com/pokemon/{code}-logo/logo",
+    "https://images.scrydex.com/pokemon/{code}/logo",
 ]
 
 

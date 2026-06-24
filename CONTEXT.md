@@ -98,6 +98,22 @@ _Avoid_: empty slot, empty card
 
 Migrations live in `supabase/migrations/`. The Supabase GitHub integration is connected to this repo — pushing to `master` automatically applies any new migration files to the live database. No manual `supabase db push` is needed.
 
+### Image sources
+
+Card images and set logos are served from two external sources:
+
+**pokemontcg.io** — official sets only
+- Card images: `https://images.pokemontcg.io/{setCode}/{cardNumber}_hires.png`
+- Logos: `https://images.pokemontcg.io/{setCode}/logo.png`
+- API for metadata/image discovery: `https://api.pokemontcg.io/v2/`
+
+**scrydex.com** — newer and custom sets not yet on pokemontcg.io
+- Card images: `https://images.scrydex.com/pokemon/{setCode}-{cardNumber}/large`
+- Logos: `https://images.scrydex.com/pokemon/{setCode}-logo/logo` (also `/{setCode}/logo`)
+- Docs at `https://scrydex.com/docs` (may require auth to view)
+
+`fetch_sets.py` probes pokemontcg.io first and falls back to scrydex automatically. `fetch_logos.py` tries both sources in order via `LOGO_CANDIDATES`.
+
 ### Adding a new set
 
 1. Upload `{setCode}.png` to the `logos` bucket in Supabase Storage.
