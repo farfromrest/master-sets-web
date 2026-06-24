@@ -91,3 +91,17 @@ _Avoid_: commit, save, confirm, done
 **Empty Pocket**:
 A visual padding cell at the end of the last binder page, added when the number of slots doesn't fill the page evenly. Has no collectible and no interaction.
 _Avoid_: empty slot, empty card
+
+## Operations
+
+### Database migrations
+
+Migrations live in `supabase/migrations/`. The Supabase GitHub integration is connected to this repo — pushing to `master` automatically applies any new migration files to the live database. No manual `supabase db push` is needed.
+
+### Adding a new set
+
+1. Upload `{setCode}.png` to the `logos` bucket in Supabase Storage.
+2. Upload `{setCode}.json` (card data) to the `cards` bucket.
+3. Insert a row into the `sets` table.
+
+Logo URLs are derived by convention in both the web and iOS apps — no code change or app release is needed for logos.
