@@ -73,7 +73,6 @@ def to_snake(entry: dict) -> dict:
         "set_name":    entry["setName"],
         "series_name": entry["seriesName"],
         "release_date": release_date,
-        "logo_url":    entry.get("logoUrl"),
         "card_count":  entry.get("cardCount", 0),
         "total_slots": entry.get("totalCollectibles", 0),
     }
@@ -216,7 +215,6 @@ def main():
 
         # ── Upsert set row ─────────────────────────────────────────────────────
         row = to_snake(entry)
-        row['logo_url'] = supabase_logo_url(url, code)
         if args.dry_run:
             print(f"  [dry-run] would upsert: {row}")
         else:

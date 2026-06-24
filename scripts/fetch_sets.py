@@ -25,12 +25,25 @@ API Key (optional, increases rate limit from ~1 000 to 20 000 req/day):
 import argparse
 import json
 import os
+import ssl
 import sys
 import time
 import urllib.parse
+import warnings
 from pathlib import Path
 from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
+
+warnings.filterwarnings("ignore", message="Unverified HTTPS")
+
+def _unverified_context(*args, **kwargs):
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    return ctx
+
+ssl.create_default_context        = _unverified_context
+ssl._create_default_https_context = _unverified_context
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 
@@ -48,7 +61,8 @@ RETRY_COUNT     = 3
 # Fallback image URL used when --fetch-images is not set.
 # Only works for sets whose images are hosted on images.pokemontcg.io.
 # Newer sets (e.g. me3, me4) use scrydex.com — run --fetch-images for those.
-IMAGE_TEMPLATE  = "https://images.pokemontcg.io/{setCode}/{cardNumber}_hires.png"
+IMAGE_TEMPLATE        = "https://images.pokemontcg.io/{setCode}/{cardNumber}_hires.png"
+SCRYDEX_TEMPLATE      = "https://images.scrydex.com/pokemon/{setCode}-{cardNumber}/large"
 
 # Canonical field order for stable diffs
 SET_FIELD_ORDER  = ["setCode", "setName", "seriesName", "releaseDate",
@@ -242,7 +256,6 @@ def main():
     needs_api = args.force or any(
         s.get("setCode") is None
         or s.get("releaseDate") is None
-        or s.get("logoUrl") is None
         for s in raw_sets
     )
 
@@ -252,6 +265,8 @@ def main():
             api_sets = load_api_catalogue()
         except RuntimeError as exc:
             print(f"Warning: {exc}\nProceeding without API metadata.\n")
+
+    all_sets = list(raw_sets)  # keep full list for writing sets.json back
 
     if args.sets:
         filter_codes = {s.strip() for s in args.sets.split(",")}
@@ -268,6 +283,8 @@ def main():
     missing_card_files = []
     unresolved_sets    = []
     warnings           = []
+
+    updated_by_code = {}  # setCode -> updated entry
 
     output_sets = []
 
@@ -286,7 +303,6 @@ def main():
             missing_meta = (
                 entry.get("setCode") is None
                 or entry.get("releaseDate") is None
-                or entry.get("logoUrl") is None
             )
 
             if api_sets and (missing_meta or args.force):
@@ -344,6 +360,7 @@ def main():
 
                         # Fetch real API image URLs when requested
                         api_image_map = {}
+                        image_template = IMAGE_TEMPLATE
                         if args.fetch_images:
                             print(f"  Fetching image URLs from API…", end="", flush=True)
                             try:
@@ -351,6 +368,25 @@ def main():
                                 print(f" {len(api_image_map)} found")
                             except Exception as exc:
                                 print(f" failed ({exc})")
+
+                            # If the API had nothing, probe pokemontcg.io vs scrydex
+                            if not api_image_map and cards:
+                                first_num = next(
+                                    (c.get("cardNumber") for c in cards if c.get("cardNumber")),
+                                    None,
+                                )
+                                if first_num:
+                                    ptcg_probe = IMAGE_TEMPLATE.format(setCode=set_code, cardNumber=first_num)
+                                    try:
+                                        req = Request(ptcg_probe, method="HEAD",
+                                                      headers={"User-Agent": "Master Setting/1.0"})
+                                        with urlopen(req, timeout=10) as r:
+                                            ptcg_ok = r.status == 200
+                                    except Exception:
+                                        ptcg_ok = False
+                                    if not ptcg_ok:
+                                        image_template = SCRYDEX_TEMPLATE
+                                        print(f"  pokemontcg.io has no images for {set_code}, using scrydex fallback")
 
                         for card in cards:
                             card = dict(card)
@@ -363,7 +399,7 @@ def main():
                             # Prefer real API URL when available, fall back to template
                             expected_url = (
                                 api_image_map.get(card_num)
-                                or IMAGE_TEMPLATE.format(setCode=set_code, cardNumber=card_num)
+                                or image_template.format(setCode=set_code, cardNumber=card_num)
                             )
                             if card.get("imageUrl") is None or args.force:
                                 if card.get("imageUrl") != expected_url:
@@ -404,7 +440,13 @@ def main():
         # Always preserve the entry in output regardless of what happened above
         if entry_changed:
             sets_updated += 1
-        output_sets.append(reorder(entry, SET_FIELD_ORDER))
+        updated_by_code[set_code] = reorder(entry, SET_FIELD_ORDER)
+
+    # Merge updates back into the full set list to avoid clobbering unprocessed sets
+    output_sets = [
+        updated_by_code.get(s.get("setCode"), reorder(s, SET_FIELD_ORDER))
+        for s in all_sets
+    ]
 
     # ── Write sets.json ────────────────────────────────────────────────────────
 

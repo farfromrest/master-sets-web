@@ -3,7 +3,7 @@
     "id": "mep-1",
     "cardNumber": "1",
     "cardName": "Meganium",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-1/large",
     "variants": [
       "normal",
       "staff"
@@ -13,7 +13,7 @@
     "id": "mep-2",
     "cardNumber": "2",
     "cardName": "Inteleon",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-2/large",
     "variants": [
       "normal",
       "staff"
@@ -23,7 +23,7 @@
     "id": "mep-3",
     "cardNumber": "3",
     "cardName": "Alakazam",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-3/large",
     "variants": [
       "normal",
       "staff"
@@ -33,7 +33,7 @@
     "id": "mep-4",
     "cardNumber": "4",
     "cardName": "Lunatone",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-4/large",
     "variants": [
       "normal",
       "staff"
@@ -43,7 +43,7 @@
     "id": "mep-5",
     "cardNumber": "5",
     "cardName": "Drifloon",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-5/large",
     "variants": [
       "normal"
     ]
@@ -52,7 +52,7 @@
     "id": "mep-6",
     "cardNumber": "6",
     "cardName": "Drifblim",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-6/large",
     "variants": [
       "normal"
     ]
@@ -61,7 +61,7 @@
     "id": "mep-7",
     "cardNumber": "7",
     "cardName": "Psyduck",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-7/large",
     "variants": [
       "normal"
     ]
@@ -70,7 +70,7 @@
     "id": "mep-8",
     "cardNumber": "8",
     "cardName": "Golduck",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-8/large",
     "variants": [
       "normal"
     ]
@@ -79,7 +79,7 @@
     "id": "mep-9",
     "cardNumber": "9",
     "cardName": "Alakazam",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-9/large",
     "variants": [
       "normal",
       "pokemon_center"
@@ -89,7 +89,7 @@
     "id": "mep-10",
     "cardNumber": "10",
     "cardName": "Riolu",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-10/large",
     "variants": [
       "normal",
       "pokemon_center"
@@ -99,7 +99,7 @@
     "id": "mep-11",
     "cardNumber": "11",
     "cardName": "Mega Latias ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-11/large",
     "variants": [
       "normal"
     ]
@@ -108,7 +108,7 @@
     "id": "mep-12",
     "cardNumber": "12",
     "cardName": "Mega Lucario ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-12/large",
     "variants": [
       "normal"
     ]
@@ -117,7 +117,7 @@
     "id": "mep-13",
     "cardNumber": "13",
     "cardName": "Mega Venusaur ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-13/large",
     "variants": [
       "normal"
     ]
@@ -126,7 +126,7 @@
     "id": "mep-14",
     "cardNumber": "14",
     "cardName": "Ceruledge",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-14/large",
     "variants": [
       "normal",
       "staff"
@@ -136,7 +136,7 @@
     "id": "mep-15",
     "cardNumber": "15",
     "cardName": "Zacian",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-15/large",
     "variants": [
       "normal",
       "staff"
@@ -146,7 +146,7 @@
     "id": "mep-16",
     "cardNumber": "16",
     "cardName": "Flygon",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-16/large",
     "variants": [
       "normal",
       "staff"
@@ -156,7 +156,7 @@
     "id": "mep-17",
     "cardNumber": "17",
     "cardName": "Toxtricity",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-17/large",
     "variants": [
       "normal",
       "staff"
@@ -166,7 +166,7 @@
     "id": "mep-18",
     "cardNumber": "18",
     "cardName": "Cottonee",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-18/large",
     "variants": [
       "normal"
     ]
@@ -175,7 +175,7 @@
     "id": "mep-19",
     "cardNumber": "19",
     "cardName": "Whimsicott",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-19/large",
     "variants": [
       "normal"
     ]
@@ -184,7 +184,7 @@
     "id": "mep-20",
     "cardNumber": "20",
     "cardName": "Sneasel",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-20/large",
     "variants": [
       "normal"
     ]
@@ -193,7 +193,7 @@
     "id": "mep-21",
     "cardNumber": "21",
     "cardName": "Weavile",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-21/large",
     "variants": [
       "normal"
     ]
@@ -202,7 +202,7 @@
     "id": "mep-22",
     "cardNumber": "22",
     "cardName": "Charcadet",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-22/large",
     "variants": [
       "normal",
       "pokemon_center"
@@ -212,7 +212,7 @@
     "id": "mep-23",
     "cardNumber": "23",
     "cardName": "Mega Charizard X ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-23/large",
     "variants": [
       "normal"
     ]
@@ -221,7 +221,7 @@
     "id": "mep-24",
     "cardNumber": "24",
     "cardName": "Oricorio ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-24/large",
     "variants": [
       "normal"
     ]
@@ -230,7 +230,7 @@
     "id": "mep-25",
     "cardNumber": "25",
     "cardName": "Mega Kangaskhan ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-25/large",
     "variants": [
       "normal"
     ]
@@ -239,7 +239,7 @@
     "id": "mep-26",
     "cardNumber": "26",
     "cardName": "Meloetta",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-26/large",
     "variants": [
       "normal"
     ]
@@ -248,7 +248,7 @@
     "id": "mep-27",
     "cardNumber": "27",
     "cardName": "Haunter",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-27/large",
     "variants": [
       "normal"
     ]
@@ -257,7 +257,7 @@
     "id": "mep-28",
     "cardNumber": "28",
     "cardName": "Celebratory Fanfare",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-28/large",
     "variants": [
       "normal"
     ]
@@ -266,7 +266,7 @@
     "id": "mep-29",
     "cardNumber": "29",
     "cardName": "Mega Charizard X ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-29/large",
     "variants": [
       "normal"
     ]
@@ -275,7 +275,7 @@
     "id": "mep-30",
     "cardNumber": "30",
     "cardName": "Mega Charizard Y ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-30/large",
     "variants": [
       "normal"
     ]
@@ -284,7 +284,7 @@
     "id": "mep-31",
     "cardNumber": "31",
     "cardName": "N's Zekrom",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-31/large",
     "variants": [
       "normal",
       "pokemon_center"
@@ -294,7 +294,7 @@
     "id": "mep-32",
     "cardNumber": "32",
     "cardName": "Mega Gardevoir ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-32/large",
     "variants": [
       "normal"
     ]
@@ -303,7 +303,7 @@
     "id": "mep-33",
     "cardNumber": "33",
     "cardName": "Mega Lucario ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-33/large",
     "variants": [
       "normal"
     ]
@@ -312,7 +312,7 @@
     "id": "mep-34",
     "cardNumber": "34",
     "cardName": "Mega Meganium ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-34/large",
     "variants": [
       "normal"
     ]
@@ -321,7 +321,7 @@
     "id": "mep-35",
     "cardNumber": "35",
     "cardName": "Mega Emboar ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-35/large",
     "variants": [
       "normal"
     ]
@@ -330,7 +330,7 @@
     "id": "mep-36",
     "cardNumber": "36",
     "cardName": "Mega Feraligatr ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-36/large",
     "variants": [
       "normal"
     ]
@@ -339,7 +339,7 @@
     "id": "mep-37",
     "cardNumber": "37",
     "cardName": "Bulbasaur",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-37/large",
     "variants": [
       "normal"
     ]
@@ -348,7 +348,7 @@
     "id": "mep-38",
     "cardNumber": "38",
     "cardName": "Charmander",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-38/large",
     "variants": [
       "normal"
     ]
@@ -357,7 +357,7 @@
     "id": "mep-39",
     "cardNumber": "39",
     "cardName": "Squirtle",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-39/large",
     "variants": [
       "normal"
     ]
@@ -366,7 +366,7 @@
     "id": "mep-40",
     "cardNumber": "40",
     "cardName": "Turtwig",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-40/large",
     "variants": [
       "normal"
     ]
@@ -375,7 +375,7 @@
     "id": "mep-41",
     "cardNumber": "41",
     "cardName": "Chimchar",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-41/large",
     "variants": [
       "normal"
     ]
@@ -384,7 +384,7 @@
     "id": "mep-42",
     "cardNumber": "42",
     "cardName": "Piplup",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-42/large",
     "variants": [
       "normal"
     ]
@@ -393,7 +393,7 @@
     "id": "mep-43",
     "cardNumber": "43",
     "cardName": "Rowlet",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-43/large",
     "variants": [
       "normal"
     ]
@@ -402,7 +402,7 @@
     "id": "mep-44",
     "cardNumber": "44",
     "cardName": "Litten",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-44/large",
     "variants": [
       "normal"
     ]
@@ -411,7 +411,7 @@
     "id": "mep-45",
     "cardNumber": "45",
     "cardName": "Popplio",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-45/large",
     "variants": [
       "normal"
     ]
@@ -420,7 +420,7 @@
     "id": "mep-46",
     "cardNumber": "46",
     "cardName": "Chikorita",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-46/large",
     "variants": [
       "normal"
     ]
@@ -429,7 +429,7 @@
     "id": "mep-47",
     "cardNumber": "47",
     "cardName": "Cyndaquil",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-47/large",
     "variants": [
       "normal"
     ]
@@ -438,7 +438,7 @@
     "id": "mep-48",
     "cardNumber": "48",
     "cardName": "Totodile",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-48/large",
     "variants": [
       "normal"
     ]
@@ -447,7 +447,7 @@
     "id": "mep-49",
     "cardNumber": "49",
     "cardName": "Snivy",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-49/large",
     "variants": [
       "normal"
     ]
@@ -456,7 +456,7 @@
     "id": "mep-50",
     "cardNumber": "50",
     "cardName": "Tepig",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-50/large",
     "variants": [
       "normal"
     ]
@@ -465,7 +465,7 @@
     "id": "mep-51",
     "cardNumber": "51",
     "cardName": "Oshawott",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-51/large",
     "variants": [
       "normal"
     ]
@@ -474,7 +474,7 @@
     "id": "mep-52",
     "cardNumber": "52",
     "cardName": "Grookey",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-52/large",
     "variants": [
       "normal"
     ]
@@ -483,7 +483,7 @@
     "id": "mep-53",
     "cardNumber": "53",
     "cardName": "Scorbunny",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-53/large",
     "variants": [
       "normal"
     ]
@@ -492,7 +492,7 @@
     "id": "mep-54",
     "cardNumber": "54",
     "cardName": "Sobble",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-54/large",
     "variants": [
       "normal"
     ]
@@ -501,7 +501,7 @@
     "id": "mep-55",
     "cardNumber": "55",
     "cardName": "Treecko",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-55/large",
     "variants": [
       "normal"
     ]
@@ -510,7 +510,7 @@
     "id": "mep-56",
     "cardNumber": "56",
     "cardName": "Torchic",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-56/large",
     "variants": [
       "normal"
     ]
@@ -519,7 +519,7 @@
     "id": "mep-57",
     "cardNumber": "57",
     "cardName": "Mudkip",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-57/large",
     "variants": [
       "normal"
     ]
@@ -528,7 +528,7 @@
     "id": "mep-58",
     "cardNumber": "58",
     "cardName": "Chespin",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-58/large",
     "variants": [
       "normal"
     ]
@@ -537,7 +537,7 @@
     "id": "mep-59",
     "cardNumber": "59",
     "cardName": "Fennekin",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-59/large",
     "variants": [
       "normal"
     ]
@@ -546,7 +546,7 @@
     "id": "mep-60",
     "cardNumber": "60",
     "cardName": "Froakie",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-60/large",
     "variants": [
       "normal"
     ]
@@ -555,7 +555,7 @@
     "id": "mep-61",
     "cardNumber": "61",
     "cardName": "Sprigatito",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-61/large",
     "variants": [
       "normal"
     ]
@@ -564,7 +564,7 @@
     "id": "mep-62",
     "cardNumber": "62",
     "cardName": "Fuecoco",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-62/large",
     "variants": [
       "normal"
     ]
@@ -573,7 +573,7 @@
     "id": "mep-63",
     "cardNumber": "63",
     "cardName": "Quaxly",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-63/large",
     "variants": [
       "normal"
     ]
@@ -582,7 +582,7 @@
     "id": "mep-64",
     "cardNumber": "64",
     "cardName": "Serperior",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-64/large",
     "variants": [
       "normal",
       "staff"
@@ -592,7 +592,7 @@
     "id": "mep-65",
     "cardNumber": "65",
     "cardName": "Barbaracle",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-65/large",
     "variants": [
       "normal",
       "staff"
@@ -602,7 +602,7 @@
     "id": "mep-66",
     "cardNumber": "66",
     "cardName": "Tyrantrum",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-66/large",
     "variants": [
       "normal",
       "staff"
@@ -612,7 +612,7 @@
     "id": "mep-67",
     "cardNumber": "67",
     "cardName": "Doublade",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-67/large",
     "variants": [
       "normal",
       "staff"
@@ -622,7 +622,7 @@
     "id": "mep-68",
     "cardNumber": "68",
     "cardName": "Makuhita",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-68/large",
     "variants": [
       "normal"
     ]
@@ -631,7 +631,7 @@
     "id": "mep-69",
     "cardNumber": "69",
     "cardName": "Chikorita",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-69/large",
     "variants": [
       "normal"
     ]
@@ -640,7 +640,7 @@
     "id": "mep-70",
     "cardNumber": "70",
     "cardName": "Tyrunt",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-70/large",
     "variants": [
       "normal",
       "pokemon_center"
@@ -650,7 +650,7 @@
     "id": "mep-71",
     "cardNumber": "71",
     "cardName": "Mega Zygarde ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-71/large",
     "variants": [
       "normal"
     ]
@@ -659,7 +659,7 @@
     "id": "mep-72",
     "cardNumber": "72",
     "cardName": "Mega Clefable ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-72/large",
     "variants": [
       "normal"
     ]
@@ -668,7 +668,7 @@
     "id": "mep-73",
     "cardNumber": "73",
     "cardName": "Mega Gengar ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-73/large",
     "variants": [
       "normal"
     ]
@@ -677,7 +677,7 @@
     "id": "mep-74",
     "cardNumber": "74",
     "cardName": "Delphox",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-74/large",
     "variants": [
       "normal",
       "staff"
@@ -687,7 +687,7 @@
     "id": "mep-75",
     "cardNumber": "75",
     "cardName": "Ampharos",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-75/large",
     "variants": [
       "normal",
       "staff"
@@ -697,7 +697,7 @@
     "id": "mep-76",
     "cardNumber": "76",
     "cardName": "Crobat",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-76/large",
     "variants": [
       "normal",
       "staff"
@@ -707,7 +707,7 @@
     "id": "mep-77",
     "cardNumber": "77",
     "cardName": "Goodra",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-77/large",
     "variants": [
       "normal",
       "staff"
@@ -717,7 +717,7 @@
     "id": "mep-78",
     "cardNumber": "78",
     "cardName": "Toxel",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-78/large",
     "variants": [
       "normal"
     ]
@@ -726,7 +726,7 @@
     "id": "mep-79",
     "cardNumber": "79",
     "cardName": "Charmeleon",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-79/large",
     "variants": [
       "normal"
     ]
@@ -735,7 +735,7 @@
     "id": "mep-80",
     "cardNumber": "80",
     "cardName": "Fennekin",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-80/large",
     "variants": [
       "normal",
       "pokemon_center"
@@ -745,7 +745,7 @@
     "id": "mep-81",
     "cardNumber": "81",
     "cardName": "Mega Greninja ex",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-81/large",
     "variants": [
       "normal"
     ]
@@ -754,7 +754,7 @@
     "id": "mep-82",
     "cardNumber": "82",
     "cardName": "Miraidon",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-82/large",
     "variants": [
       "normal"
     ]
@@ -763,7 +763,7 @@
     "id": "mep-83",
     "cardNumber": "83",
     "cardName": "Slowbro",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-83/large",
     "variants": [
       "normal"
     ]
@@ -772,7 +772,7 @@
     "id": "mep-84",
     "cardNumber": "84",
     "cardName": "Dhelmise",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-84/large",
     "variants": [
       "normal"
     ]
@@ -781,7 +781,7 @@
     "id": "mep-85",
     "cardNumber": "85",
     "cardName": "Bastiodon",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-85/large",
     "variants": [
       "normal"
     ]
@@ -790,7 +790,7 @@
     "id": "mep-86",
     "cardNumber": "86",
     "cardName": "Slowpoke",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-86/large",
     "variants": [
       "normal"
     ]
@@ -799,7 +799,7 @@
     "id": "mep-87",
     "cardNumber": "87",
     "cardName": "Binacle",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-87/large",
     "variants": [
       "normal"
     ]
@@ -808,7 +808,7 @@
     "id": "mep-88",
     "cardNumber": "88",
     "cardName": "Zarude",
-    "imageUrl": null,
+    "imageUrl": "https://images.scrydex.com/pokemon/mep-88/large",
     "variants": [
       "normal",
       "pokemon_center"
