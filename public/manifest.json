@@ -1,6 +1,6 @@
 {
-  "name": "MasterSets",
-  "short_name": "MasterSets",
+  "name": "Master Setting",
+  "short_name": "Master Setting",
   "description": "Track your Pokémon TCG Master Set collections.",
   "start_url": "/",
   "display": "standalone",

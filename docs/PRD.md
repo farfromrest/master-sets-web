@@ -11,7 +11,7 @@ This is a hobby project. If asked to take it down for IP reasons, it goes down. 
 ## Goals
 
 1. Replicate the core collect-and-track loop from the iOS app as a responsive web app.
-2. Enable cross-device sync via user accounts (Sign in with Apple) — no iCloud dependency.
+2. Enable cross-device sync via user accounts (Sign in with Apple, shared with iOS app) — no iCloud dependency.
 3. Allow set catalogue updates without deploying a new version of the app.
 4. Preserve the dark premium binder aesthetic and the physical-binder page metaphor.
 5. Take advantage of web-specific affordances (wider viewports, hover, keyboard shortcuts, shift-click range selection).
@@ -21,7 +21,7 @@ This is a hobby project. If asked to take it down for IP reasons, it goes down. 
 - Offline/PWA support (future consideration, not MVP).
 - Social features (friends, trading, leaderboards).
 - Monetization.
-- Maintaining the iOS app alongside the web app.
+- Replacing the iOS app — both platforms are maintained.
 - Hosting card images (hotlink existing CDNs).
 
 ## Tech Stack
@@ -206,10 +206,10 @@ The web app must match the iOS app's visual identity exactly. Dark mode only.
 ### MVP
 
 #### 1. Authentication
-- Magic link login via Supabase Auth.
-- User enters email, receives a login link, clicks to authenticate.
+- Sign in with Apple via Supabase Auth (same provider as iOS app).
 - Session persisted across browser tabs/reloads.
 - Logged-out users see the landing page only.
+- Shared Supabase backend — users see the same data on iOS and web.
 
 #### 2. Dashboard
 - Displays all tracked sets grouped by series, sorted by release date (newest first).
@@ -345,6 +345,6 @@ Carry forward the iOS app's accessibility standards:
 
 - Supabase Row-Level Security (RLS) on all user data tables. Users can only read/write their own rows.
 - No server-side secrets exposed to the client.
-- Magic link tokens are short-lived.
+- Auth tokens are short-lived.
 - Catalogue data is public-read, admin-write-only.
 - No user-generated content beyond username and collection state.
