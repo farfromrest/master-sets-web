@@ -1,17 +1,17 @@
-# Master Sets Web App — Product Requirements Document
+# Master Setting — Product Requirements Document
 
 ## Background
 
-Master Sets is a minimalist tracker for Pokémon TCG Master Set collectors, designed to mimic the physical workflow of a real-world card binder. The app exists as a native iOS app (SwiftUI, SwiftData, iCloud sync) with 37 sets, a dark premium aesthetic, and a binder-page grid layout.
+Master Setting is a minimalist tracker for Pokémon TCG Master Set collectors, designed to mimic the physical workflow of a real-world card binder. The app exists as a native iOS app (SwiftUI, Supabase) and a web app, both focused exclusively on master sets.
 
-The iOS app was rejected from the App Store under Guideline 4.3 (Spam) due to existing competitors, and Pokémon IP presents an ongoing grey area for App Store distribution. A web app sidesteps both issues — no gatekeeper, easier to update, and broader device reach.
+The iOS app was initially submitted as "Master Sets" but rejected under Guideline 4.3 (Spam). The resubmission as "Master Setting" differentiates on focus — master-set-only, no bulk collection tracking — and Pokémon IP is an accepted ongoing grey area. A web app sidesteps App Store gatekeeping entirely.
 
-This is a hobby project. If asked to take it down for IP reasons, it goes down. The goal is to build the best possible web experience for tracking Master Set collections, not to build a business.
+This is a hobby project. If asked to take it down for IP reasons, it goes down. The goal is to build the best possible experience for tracking master set collections, not to build a business.
 
 ## Goals
 
 1. Replicate the core collect-and-track loop from the iOS app as a responsive web app.
-2. Enable cross-device sync via user accounts (magic link auth) — no iCloud dependency.
+2. Enable cross-device sync via user accounts (Sign in with Apple) — no iCloud dependency.
 3. Allow set catalogue updates without deploying a new version of the app.
 4. Preserve the dark premium binder aesthetic and the physical-binder page metaphor.
 5. Take advantage of web-specific affordances (wider viewports, hover, keyboard shortcuts, shift-click range selection).
@@ -31,7 +31,7 @@ This is a hobby project. If asked to take it down for IP reasons, it goes down. 
 | Framework | Next.js (App Router) | Single app — API routes + React frontend |
 | Language | TypeScript | Full-stack, shared types |
 | Styling | Tailwind CSS | Design tokens ported from iOS (`BinderTheme`, `HoloPalette`) |
-| Auth | Supabase Auth (magic link) | Email-only, no OAuth providers |
+| Auth | Supabase Auth (Sign in with Apple) | Apple OAuth only |
 | Database | Supabase Postgres | User state + set index |
 | File Storage | Supabase Storage | Per-set card JSON, set logos |
 | Card Images | Hotlink via `next/image` | `images.pokemontcg.io`, `images.scrydex.com` |
@@ -105,11 +105,43 @@ Row-level security: users can read/write only their own rows. Profiles readable 
 
 ### Set Catalogue Update Pipeline
 
-1. Run existing Python scripts locally (`fetch_sets.py`, `fetch_logos.py`, `validate_images.py`).
-2. Modified scripts upload card JSON to Supabase Storage (`cards/{setCode}.json`).
-3. Modified scripts upsert set metadata into the `sets` Postgres table.
-4. Modified scripts upload logos to Supabase Storage (`logos/{setCode}.png`).
-5. Changes are live immediately — no deployment required.
+All scripts live in `scripts/`. Adding a new set:
+
+```bash
+# 1. Ingest tab-separated card data → writes data/sets/{setCode}.json and updates data/sets.json
+python3 scripts/ingest_set.py data.tsv \
+  --set-code abc \
+  --set-name "Set Name" \
+  --series "Series Name" \
+  --release 2026/01/01
+
+# 2. Find and download the set logo (probes pokemontcg.io and scrydex.com automatically)
+python3 scripts/fetch_logos.py --discover
+
+# 3. Populate card imageUrls from the pokemontcg.io API
+python3 scripts/fetch_sets.py --fetch-images
+
+# 4. Upload card JSON, logo, and set metadata to Supabase — live immediately, no deploy needed
+python3 scripts/upload_catalogue.py --sets abc
+```
+
+**Script reference:**
+
+| Script | Purpose |
+|---|---|
+| `ingest_set.py` | Converts tab-separated promo set data into `data/sets/{setCode}.json` and updates `data/sets.json`. Codifies variant rules: Jumbo→excluded, Staff→`staff`, Pokémon Center Stamp→`pokemon_center`, else→`normal`. Skips unnumbered cards. |
+| `fetch_logos.py` | Downloads and resizes (200px wide) set logos. `--discover` probes pokemontcg.io and scrydex.com for sets with no `logoUrl`. `--force` re-downloads all. |
+| `fetch_sets.py` | Enriches card data with `imageUrl` values from the pokemontcg.io API. Caches API responses in `scripts/cache/`. |
+| `validate_images.py` | HEAD-checks all non-null `imageUrl` values and reports broken ones. `--fix` nulls out broken URLs. |
+| `upload_catalogue.py` | Uploads card JSON to Supabase Storage, upserts set metadata into Postgres, and uploads logos. `--sets abc` limits to one set. |
+
+**Input format for `ingest_set.py`** — tab-separated, 8 columns:
+
+```
+[row_id]  set_name  card_number  pokedex_num  card_name  type  source  [notes...]
+```
+
+`row_id` may be empty. Card number `--` rows are skipped.
 
 ## URL Structure
 
