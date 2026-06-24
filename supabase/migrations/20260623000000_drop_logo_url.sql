@@ -1,0 +1,1 @@
+ALTER TABLE sets DROP COLUMN logo_url;

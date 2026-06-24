@@ -13,7 +13,7 @@ type CardData = {
 export type TrackedSetSummary = {
   setCode: string
   setName: string
-  logoUrl: string | null
+  logoUrl: string
   owned: number
   total: number
 }
@@ -22,7 +22,6 @@ type AllTrackedSetRow = {
   set_code: string
   sets: {
     set_name: string
-    logo_url: string | null
     total_slots: number
   }
 }
@@ -71,7 +70,7 @@ export default async function BinderPage({
       .single(),
     supabase
       .from('sets')
-      .select('set_name, logo_url')
+      .select('set_name')
       .eq('set_code', setCode)
       .single(),
     supabase
@@ -81,7 +80,7 @@ export default async function BinderPage({
       .eq('set_code', setCode),
     supabase
       .from('tracked_sets')
-      .select('set_code, sets(set_name, logo_url, total_slots)')
+      .select('set_code, sets(set_name, total_slots)')
       .eq('user_id', user.id),
     supabase
       .from('owned_slots')
@@ -93,10 +92,11 @@ export default async function BinderPage({
   for (const row of allOwnedSlots ?? []) {
     ownedBySet[row.set_code] = (ownedBySet[row.set_code] ?? 0) + 1
   }
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
   const trackedSets: TrackedSetSummary[] = ((allTrackedSetRows ?? []) as unknown as AllTrackedSetRow[]).map((ts) => ({
     setCode: ts.set_code,
     setName: ts.sets.set_name,
-    logoUrl: ts.sets.logo_url,
+    logoUrl: `${supabaseUrl}/storage/v1/object/public/logos/${ts.set_code}.png`,
     owned: ownedBySet[ts.set_code] ?? 0,
     total: ts.sets.total_slots,
   }))
@@ -111,7 +111,7 @@ export default async function BinderPage({
     <BinderView
       setCode={setCode}
       setName={setMeta?.set_name ?? setCode}
-      logoUrl={setMeta?.logo_url ?? null}
+      logoUrl={setMeta ? `${supabaseUrl}/storage/v1/object/public/logos/${setCode}.png` : null}
       trackedSets={trackedSets}
       slots={buildSlots(cards)}
       ownedSlotIds={(ownedRows ?? []).map((r) => r.slot_id)}
