@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "sv7-1",
+    "cardNumber": "1",
+    "cardName": "Venusaur ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/1_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-2",
+    "cardNumber": "2",
+    "cardName": "Ledyba",
+    "imageUrl": "https://images.pokemontcg.io/sv7/2_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-3",
+    "cardNumber": "3",
+    "cardName": "Ledian",
+    "imageUrl": "https://images.pokemontcg.io/sv7/3_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-4",
+    "cardNumber": "4",
+    "cardName": "Celebi",
+    "imageUrl": "https://images.pokemontcg.io/sv7/4_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-5",
+    "cardNumber": "5",
+    "cardName": "Lileep",
+    "imageUrl": "https://images.pokemontcg.io/sv7/5_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-6",
+    "cardNumber": "6",
+    "cardName": "Cradily",
+    "imageUrl": "https://images.pokemontcg.io/sv7/6_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-7",
+    "cardNumber": "7",
+    "cardName": "Carnivine",
+    "imageUrl": "https://images.pokemontcg.io/sv7/7_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-8",
+    "cardNumber": "8",
+    "cardName": "Mow Rotom",
+    "imageUrl": "https://images.pokemontcg.io/sv7/8_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-9",
+    "cardNumber": "9",
+    "cardName": "Grubbin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/9_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-10",
+    "cardNumber": "10",
+    "cardName": "Gossifleur",
+    "imageUrl": "https://images.pokemontcg.io/sv7/10_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-11",
+    "cardNumber": "11",
+    "cardName": "Eldegoss",
+    "imageUrl": "https://images.pokemontcg.io/sv7/11_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-12",
+    "cardNumber": "12",
+    "cardName": "Applin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/12_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-13",
+    "cardNumber": "13",
+    "cardName": "Dipplin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/13_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-14",
+    "cardNumber": "14",
+    "cardName": "Hydrapple ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/14_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-15",
+    "cardNumber": "15",
+    "cardName": "Nymble",
+    "imageUrl": "https://images.pokemontcg.io/sv7/15_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-16",
+    "cardNumber": "16",
+    "cardName": "Lokix",
+    "imageUrl": "https://images.pokemontcg.io/sv7/16_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-17",
+    "cardNumber": "17",
+    "cardName": "Toedscool",
+    "imageUrl": "https://images.pokemontcg.io/sv7/17_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-18",
+    "cardNumber": "18",
+    "cardName": "Toedscruel",
+    "imageUrl": "https://images.pokemontcg.io/sv7/18_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-19",
+    "cardNumber": "19",
+    "cardName": "Ponyta",
+    "imageUrl": "https://images.pokemontcg.io/sv7/19_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-20",
+    "cardNumber": "20",
+    "cardName": "Rapidash",
+    "imageUrl": "https://images.pokemontcg.io/sv7/20_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-21",
+    "cardNumber": "21",
+    "cardName": "Pansear",
+    "imageUrl": "https://images.pokemontcg.io/sv7/21_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-22",
+    "cardNumber": "22",
+    "cardName": "Reshiram",
+    "imageUrl": "https://images.pokemontcg.io/sv7/22_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-23",
+    "cardNumber": "23",
+    "cardName": "Salandit",
+    "imageUrl": "https://images.pokemontcg.io/sv7/23_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-24",
+    "cardNumber": "24",
+    "cardName": "Salazzle",
+    "imageUrl": "https://images.pokemontcg.io/sv7/24_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-25",
+    "cardNumber": "25",
+    "cardName": "Turtonator",
+    "imageUrl": "https://images.pokemontcg.io/sv7/25_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-26",
+    "cardNumber": "26",
+    "cardName": "Scorbunny",
+    "imageUrl": "https://images.pokemontcg.io/sv7/26_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-27",
+    "cardNumber": "27",
+    "cardName": "Raboot",
+    "imageUrl": "https://images.pokemontcg.io/sv7/27_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-28",
+    "cardNumber": "28",
+    "cardName": "Cinderace ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/28_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-29",
+    "cardNumber": "29",
+    "cardName": "Charcadet",
+    "imageUrl": "https://images.pokemontcg.io/sv7/29_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-30",
+    "cardNumber": "30",
+    "cardName": "Blastoise ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/30_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-31",
+    "cardNumber": "31",
+    "cardName": "Lapras",
+    "imageUrl": "https://images.pokemontcg.io/sv7/31_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-32",
+    "cardNumber": "32",
+    "cardName": "Lapras ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/32_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-33",
+    "cardNumber": "33",
+    "cardName": "Marill",
+    "imageUrl": "https://images.pokemontcg.io/sv7/33_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-34",
+    "cardNumber": "34",
+    "cardName": "Azumarill",
+    "imageUrl": "https://images.pokemontcg.io/sv7/34_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-35",
+    "cardNumber": "35",
+    "cardName": "Finneon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/35_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-36",
+    "cardNumber": "36",
+    "cardName": "Lumineon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/36_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-37",
+    "cardNumber": "37",
+    "cardName": "Tirtouga",
+    "imageUrl": "https://images.pokemontcg.io/sv7/37_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-38",
+    "cardNumber": "38",
+    "cardName": "Carracosta",
+    "imageUrl": "https://images.pokemontcg.io/sv7/38_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-39",
+    "cardNumber": "39",
+    "cardName": "Froakie",
+    "imageUrl": "https://images.pokemontcg.io/sv7/39_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-40",
+    "cardNumber": "40",
+    "cardName": "Frogadier",
+    "imageUrl": "https://images.pokemontcg.io/sv7/40_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-41",
+    "cardNumber": "41",
+    "cardName": "Greninja ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/41_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-42",
+    "cardNumber": "42",
+    "cardName": "Crabominable",
+    "imageUrl": "https://images.pokemontcg.io/sv7/42_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-43",
+    "cardNumber": "43",
+    "cardName": "Chewtle",
+    "imageUrl": "https://images.pokemontcg.io/sv7/43_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-44",
+    "cardNumber": "44",
+    "cardName": "Drednaw",
+    "imageUrl": "https://images.pokemontcg.io/sv7/44_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-45",
+    "cardNumber": "45",
+    "cardName": "Veluza",
+    "imageUrl": "https://images.pokemontcg.io/sv7/45_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-46",
+    "cardNumber": "46",
+    "cardName": "Electabuzz",
+    "imageUrl": "https://images.pokemontcg.io/sv7/46_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-47",
+    "cardNumber": "47",
+    "cardName": "Electivire",
+    "imageUrl": "https://images.pokemontcg.io/sv7/47_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-48",
+    "cardNumber": "48",
+    "cardName": "Chinchou",
+    "imageUrl": "https://images.pokemontcg.io/sv7/48_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-49",
+    "cardNumber": "49",
+    "cardName": "Lanturn",
+    "imageUrl": "https://images.pokemontcg.io/sv7/49_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-50",
+    "cardNumber": "50",
+    "cardName": "Joltik",
+    "imageUrl": "https://images.pokemontcg.io/sv7/50_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-51",
+    "cardNumber": "51",
+    "cardName": "Galvantula ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/51_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-52",
+    "cardNumber": "52",
+    "cardName": "Charjabug",
+    "imageUrl": "https://images.pokemontcg.io/sv7/52_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-53",
+    "cardNumber": "53",
+    "cardName": "Vikavolt",
+    "imageUrl": "https://images.pokemontcg.io/sv7/53_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-54",
+    "cardNumber": "54",
+    "cardName": "Togedemaru",
+    "imageUrl": "https://images.pokemontcg.io/sv7/54_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-55",
+    "cardNumber": "55",
+    "cardName": "Zeraora",
+    "imageUrl": "https://images.pokemontcg.io/sv7/55_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-56",
+    "cardNumber": "56",
+    "cardName": "Pawmi",
+    "imageUrl": "https://images.pokemontcg.io/sv7/56_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-57",
+    "cardNumber": "57",
+    "cardName": "Slowpoke",
+    "imageUrl": "https://images.pokemontcg.io/sv7/57_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-58",
+    "cardNumber": "58",
+    "cardName": "Slowking",
+    "imageUrl": "https://images.pokemontcg.io/sv7/58_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-59",
+    "cardNumber": "59",
+    "cardName": "Mewtwo",
+    "imageUrl": "https://images.pokemontcg.io/sv7/59_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-60",
+    "cardNumber": "60",
+    "cardName": "Drifloon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/60_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-61",
+    "cardNumber": "61",
+    "cardName": "Drifblim",
+    "imageUrl": "https://images.pokemontcg.io/sv7/61_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-62",
+    "cardNumber": "62",
+    "cardName": "Yamask",
+    "imageUrl": "https://images.pokemontcg.io/sv7/62_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-63",
+    "cardNumber": "63",
+    "cardName": "Comfey",
+    "imageUrl": "https://images.pokemontcg.io/sv7/63_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-64",
+    "cardNumber": "64",
+    "cardName": "Milcery",
+    "imageUrl": "https://images.pokemontcg.io/sv7/64_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-65",
+    "cardNumber": "65",
+    "cardName": "Alcremie",
+    "imageUrl": "https://images.pokemontcg.io/sv7/65_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-66",
+    "cardNumber": "66",
+    "cardName": "Fidough",
+    "imageUrl": "https://images.pokemontcg.io/sv7/66_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-67",
+    "cardNumber": "67",
+    "cardName": "Dachsbun ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/67_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-68",
+    "cardNumber": "68",
+    "cardName": "Flittle",
+    "imageUrl": "https://images.pokemontcg.io/sv7/68_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-69",
+    "cardNumber": "69",
+    "cardName": "Espathra",
+    "imageUrl": "https://images.pokemontcg.io/sv7/69_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-70",
+    "cardNumber": "70",
+    "cardName": "Greavard",
+    "imageUrl": "https://images.pokemontcg.io/sv7/70_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-71",
+    "cardNumber": "71",
+    "cardName": "Iron Boulder",
+    "imageUrl": "https://images.pokemontcg.io/sv7/71_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-72",
+    "cardNumber": "72",
+    "cardName": "Cubone",
+    "imageUrl": "https://images.pokemontcg.io/sv7/72_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-73",
+    "cardNumber": "73",
+    "cardName": "Marowak",
+    "imageUrl": "https://images.pokemontcg.io/sv7/73_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-74",
+    "cardNumber": "74",
+    "cardName": "Rhyhorn",
+    "imageUrl": "https://images.pokemontcg.io/sv7/74_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-75",
+    "cardNumber": "75",
+    "cardName": "Rhydon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/75_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-76",
+    "cardNumber": "76",
+    "cardName": "Rhyperior",
+    "imageUrl": "https://images.pokemontcg.io/sv7/76_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-77",
+    "cardNumber": "77",
+    "cardName": "Meditite",
+    "imageUrl": "https://images.pokemontcg.io/sv7/77_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-78",
+    "cardNumber": "78",
+    "cardName": "Meditite",
+    "imageUrl": "https://images.pokemontcg.io/sv7/78_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-79",
+    "cardNumber": "79",
+    "cardName": "Medicham",
+    "imageUrl": "https://images.pokemontcg.io/sv7/79_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-80",
+    "cardNumber": "80",
+    "cardName": "Medicham ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/80_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-81",
+    "cardNumber": "81",
+    "cardName": "Riolu",
+    "imageUrl": "https://images.pokemontcg.io/sv7/81_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-82",
+    "cardNumber": "82",
+    "cardName": "Lucario ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/82_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-83",
+    "cardNumber": "83",
+    "cardName": "Mienfoo",
+    "imageUrl": "https://images.pokemontcg.io/sv7/83_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-84",
+    "cardNumber": "84",
+    "cardName": "Mienshao",
+    "imageUrl": "https://images.pokemontcg.io/sv7/84_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-85",
+    "cardNumber": "85",
+    "cardName": "Pancham",
+    "imageUrl": "https://images.pokemontcg.io/sv7/85_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-86",
+    "cardNumber": "86",
+    "cardName": "Diancie",
+    "imageUrl": "https://images.pokemontcg.io/sv7/86_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-87",
+    "cardNumber": "87",
+    "cardName": "Crabrawler",
+    "imageUrl": "https://images.pokemontcg.io/sv7/87_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-88",
+    "cardNumber": "88",
+    "cardName": "Falinks",
+    "imageUrl": "https://images.pokemontcg.io/sv7/88_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-89",
+    "cardNumber": "89",
+    "cardName": "Garganacl ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/89_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-90",
+    "cardNumber": "90",
+    "cardName": "Koraidon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/90_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-91",
+    "cardNumber": "91",
+    "cardName": "Gulpin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/91_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-92",
+    "cardNumber": "92",
+    "cardName": "Swalot",
+    "imageUrl": "https://images.pokemontcg.io/sv7/92_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-93",
+    "cardNumber": "93",
+    "cardName": "Pangoro",
+    "imageUrl": "https://images.pokemontcg.io/sv7/93_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-94",
+    "cardNumber": "94",
+    "cardName": "Impidimp",
+    "imageUrl": "https://images.pokemontcg.io/sv7/94_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-95",
+    "cardNumber": "95",
+    "cardName": "Morgrem",
+    "imageUrl": "https://images.pokemontcg.io/sv7/95_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-96",
+    "cardNumber": "96",
+    "cardName": "Grimmsnarl",
+    "imageUrl": "https://images.pokemontcg.io/sv7/96_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-97",
+    "cardNumber": "97",
+    "cardName": "Bombirdier",
+    "imageUrl": "https://images.pokemontcg.io/sv7/97_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-98",
+    "cardNumber": "98",
+    "cardName": "Jirachi",
+    "imageUrl": "https://images.pokemontcg.io/sv7/98_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-99",
+    "cardNumber": "99",
+    "cardName": "Klink",
+    "imageUrl": "https://images.pokemontcg.io/sv7/99_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-100",
+    "cardNumber": "100",
+    "cardName": "Klang",
+    "imageUrl": "https://images.pokemontcg.io/sv7/100_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-101",
+    "cardNumber": "101",
+    "cardName": "Klinklang",
+    "imageUrl": "https://images.pokemontcg.io/sv7/101_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-102",
+    "cardNumber": "102",
+    "cardName": "Meltan",
+    "imageUrl": "https://images.pokemontcg.io/sv7/102_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-103",
+    "cardNumber": "103",
+    "cardName": "Meltan",
+    "imageUrl": "https://images.pokemontcg.io/sv7/103_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-104",
+    "cardNumber": "104",
+    "cardName": "Melmetal",
+    "imageUrl": "https://images.pokemontcg.io/sv7/104_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-105",
+    "cardNumber": "105",
+    "cardName": "Melmetal ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/105_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-106",
+    "cardNumber": "106",
+    "cardName": "Duraludon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/106_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-107",
+    "cardNumber": "107",
+    "cardName": "Archaludon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/107_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-108",
+    "cardNumber": "108",
+    "cardName": "Varoom",
+    "imageUrl": "https://images.pokemontcg.io/sv7/108_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-109",
+    "cardNumber": "109",
+    "cardName": "Revavroom",
+    "imageUrl": "https://images.pokemontcg.io/sv7/109_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-110",
+    "cardNumber": "110",
+    "cardName": "Orthworm ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/110_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-111",
+    "cardNumber": "111",
+    "cardName": "Raging Bolt",
+    "imageUrl": "https://images.pokemontcg.io/sv7/111_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-112",
+    "cardNumber": "112",
+    "cardName": "Tauros",
+    "imageUrl": "https://images.pokemontcg.io/sv7/112_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-113",
+    "cardNumber": "113",
+    "cardName": "Eevee",
+    "imageUrl": "https://images.pokemontcg.io/sv7/113_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-114",
+    "cardNumber": "114",
+    "cardName": "Hoothoot",
+    "imageUrl": "https://images.pokemontcg.io/sv7/114_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-115",
+    "cardNumber": "115",
+    "cardName": "Noctowl",
+    "imageUrl": "https://images.pokemontcg.io/sv7/115_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-116",
+    "cardNumber": "116",
+    "cardName": "Glameow",
+    "imageUrl": "https://images.pokemontcg.io/sv7/116_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-117",
+    "cardNumber": "117",
+    "cardName": "Purugly",
+    "imageUrl": "https://images.pokemontcg.io/sv7/117_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-118",
+    "cardNumber": "118",
+    "cardName": "Fan Rotom",
+    "imageUrl": "https://images.pokemontcg.io/sv7/118_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-119",
+    "cardNumber": "119",
+    "cardName": "Bouffalant",
+    "imageUrl": "https://images.pokemontcg.io/sv7/119_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-120",
+    "cardNumber": "120",
+    "cardName": "Tornadus",
+    "imageUrl": "https://images.pokemontcg.io/sv7/120_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-121",
+    "cardNumber": "121",
+    "cardName": "Fletchling",
+    "imageUrl": "https://images.pokemontcg.io/sv7/121_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-122",
+    "cardNumber": "122",
+    "cardName": "Fletchinder",
+    "imageUrl": "https://images.pokemontcg.io/sv7/122_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-123",
+    "cardNumber": "123",
+    "cardName": "Talonflame",
+    "imageUrl": "https://images.pokemontcg.io/sv7/123_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-124",
+    "cardNumber": "124",
+    "cardName": "Wooloo",
+    "imageUrl": "https://images.pokemontcg.io/sv7/124_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-125",
+    "cardNumber": "125",
+    "cardName": "Dubwool",
+    "imageUrl": "https://images.pokemontcg.io/sv7/125_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-126",
+    "cardNumber": "126",
+    "cardName": "Lechonk",
+    "imageUrl": "https://images.pokemontcg.io/sv7/126_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-127",
+    "cardNumber": "127",
+    "cardName": "Cyclizar",
+    "imageUrl": "https://images.pokemontcg.io/sv7/127_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-128",
+    "cardNumber": "128",
+    "cardName": "Terapagos ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/128_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-129",
+    "cardNumber": "129",
+    "cardName": "Antique Cover Fossil",
+    "imageUrl": "https://images.pokemontcg.io/sv7/129_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-130",
+    "cardNumber": "130",
+    "cardName": "Antique Root Fossil",
+    "imageUrl": "https://images.pokemontcg.io/sv7/130_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-131",
+    "cardNumber": "131",
+    "cardName": "Area Zero Underdepths",
+    "imageUrl": "https://images.pokemontcg.io/sv7/131_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-132",
+    "cardNumber": "132",
+    "cardName": "Briar",
+    "imageUrl": "https://images.pokemontcg.io/sv7/132_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-133",
+    "cardNumber": "133",
+    "cardName": "Crispin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/133_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-134",
+    "cardNumber": "134",
+    "cardName": "Deluxe Bomb",
+    "imageUrl": "https://images.pokemontcg.io/sv7/134_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-135",
+    "cardNumber": "135",
+    "cardName": "Glass Trumpet",
+    "imageUrl": "https://images.pokemontcg.io/sv7/135_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-136",
+    "cardNumber": "136",
+    "cardName": "Grand Tree",
+    "imageUrl": "https://images.pokemontcg.io/sv7/136_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-137",
+    "cardNumber": "137",
+    "cardName": "Gravity Gemstone",
+    "imageUrl": "https://images.pokemontcg.io/sv7/137_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-138",
+    "cardNumber": "138",
+    "cardName": "Kofu",
+    "imageUrl": "https://images.pokemontcg.io/sv7/138_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-139",
+    "cardNumber": "139",
+    "cardName": "Lacey",
+    "imageUrl": "https://images.pokemontcg.io/sv7/139_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-140",
+    "cardNumber": "140",
+    "cardName": "Occa Berry",
+    "imageUrl": "https://images.pokemontcg.io/sv7/140_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-141",
+    "cardNumber": "141",
+    "cardName": "Payapa Berry",
+    "imageUrl": "https://images.pokemontcg.io/sv7/141_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "sv7-142",
+    "cardNumber": "142",
+    "cardName": "Sparkling Crystal",
+    "imageUrl": "https://images.pokemontcg.io/sv7/142_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-143",
+    "cardNumber": "143",
+    "cardName": "Bulbasaur",
+    "imageUrl": "https://images.pokemontcg.io/sv7/143_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-144",
+    "cardNumber": "144",
+    "cardName": "Ledian",
+    "imageUrl": "https://images.pokemontcg.io/sv7/144_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-145",
+    "cardNumber": "145",
+    "cardName": "Lileep",
+    "imageUrl": "https://images.pokemontcg.io/sv7/145_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-146",
+    "cardNumber": "146",
+    "cardName": "Turtonator",
+    "imageUrl": "https://images.pokemontcg.io/sv7/146_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-147",
+    "cardNumber": "147",
+    "cardName": "Raboot",
+    "imageUrl": "https://images.pokemontcg.io/sv7/147_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-148",
+    "cardNumber": "148",
+    "cardName": "Squirtle",
+    "imageUrl": "https://images.pokemontcg.io/sv7/148_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-149",
+    "cardNumber": "149",
+    "cardName": "Crabominable",
+    "imageUrl": "https://images.pokemontcg.io/sv7/149_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-150",
+    "cardNumber": "150",
+    "cardName": "Joltik",
+    "imageUrl": "https://images.pokemontcg.io/sv7/150_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-151",
+    "cardNumber": "151",
+    "cardName": "Zeraora",
+    "imageUrl": "https://images.pokemontcg.io/sv7/151_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-152",
+    "cardNumber": "152",
+    "cardName": "Milcery",
+    "imageUrl": "https://images.pokemontcg.io/sv7/152_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-153",
+    "cardNumber": "153",
+    "cardName": "Meditite",
+    "imageUrl": "https://images.pokemontcg.io/sv7/153_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-154",
+    "cardNumber": "154",
+    "cardName": "Gulpin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/154_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-155",
+    "cardNumber": "155",
+    "cardName": "Archaludon",
+    "imageUrl": "https://images.pokemontcg.io/sv7/155_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-156",
+    "cardNumber": "156",
+    "cardName": "Hydrapple ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/156_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-157",
+    "cardNumber": "157",
+    "cardName": "Cinderace ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/157_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-158",
+    "cardNumber": "158",
+    "cardName": "Lapras ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/158_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-159",
+    "cardNumber": "159",
+    "cardName": "Galvantula ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/159_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-160",
+    "cardNumber": "160",
+    "cardName": "Dachsbun ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/160_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-161",
+    "cardNumber": "161",
+    "cardName": "Medicham ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/161_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-162",
+    "cardNumber": "162",
+    "cardName": "Orthworm ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/162_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-163",
+    "cardNumber": "163",
+    "cardName": "Briar",
+    "imageUrl": "https://images.pokemontcg.io/sv7/163_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-164",
+    "cardNumber": "164",
+    "cardName": "Crispin",
+    "imageUrl": "https://images.pokemontcg.io/sv7/164_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-165",
+    "cardNumber": "165",
+    "cardName": "Kofu",
+    "imageUrl": "https://images.pokemontcg.io/sv7/165_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-166",
+    "cardNumber": "166",
+    "cardName": "Lacey",
+    "imageUrl": "https://images.pokemontcg.io/sv7/166_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-167",
+    "cardNumber": "167",
+    "cardName": "Hydrapple ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/167_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-168",
+    "cardNumber": "168",
+    "cardName": "Galvantula ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/168_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-169",
+    "cardNumber": "169",
+    "cardName": "Dachsbun ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/169_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-170",
+    "cardNumber": "170",
+    "cardName": "Terapagos ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/170_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-171",
+    "cardNumber": "171",
+    "cardName": "Briar",
+    "imageUrl": "https://images.pokemontcg.io/sv7/171_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-172",
+    "cardNumber": "172",
+    "cardName": "Lacey",
+    "imageUrl": "https://images.pokemontcg.io/sv7/172_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-173",
+    "cardNumber": "173",
+    "cardName": "Terapagos ex",
+    "imageUrl": "https://images.pokemontcg.io/sv7/173_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-174",
+    "cardNumber": "174",
+    "cardName": "Area Zero Underdepths",
+    "imageUrl": "https://images.pokemontcg.io/sv7/174_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv7-175",
+    "cardNumber": "175",
+    "cardName": "Bravery Charm",
+    "imageUrl": "https://images.pokemontcg.io/sv7/175_hires.png",
+    "variants": [
+      "holo"
+    ]
+  }
+]

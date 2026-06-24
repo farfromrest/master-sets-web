@@ -1,0 +1,1197 @@
+[
+  {
+    "id": "me3-1",
+    "cardNumber": "1",
+    "cardName": "Spinarak",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-1/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-2",
+    "cardNumber": "2",
+    "cardName": "Ariados",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-2/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-3",
+    "cardNumber": "3",
+    "cardName": "Shaymin",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-3/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-4",
+    "cardNumber": "4",
+    "cardName": "Snivy",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-4/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-5",
+    "cardNumber": "5",
+    "cardName": "Servine",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-5/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-6",
+    "cardNumber": "6",
+    "cardName": "Serperior",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-6/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-7",
+    "cardNumber": "7",
+    "cardName": "Scatterbug",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-7/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-8",
+    "cardNumber": "8",
+    "cardName": "Spewpa",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-8/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-9",
+    "cardNumber": "9",
+    "cardName": "Vivillon",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-9/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-10",
+    "cardNumber": "10",
+    "cardName": "Rowlet",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-10/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-11",
+    "cardNumber": "11",
+    "cardName": "Dartrix",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-11/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-12",
+    "cardNumber": "12",
+    "cardName": "Decidueye ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-12/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-13",
+    "cardNumber": "13",
+    "cardName": "Fletchinder",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-13/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-14",
+    "cardNumber": "14",
+    "cardName": "Talonflame",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-14/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-15",
+    "cardNumber": "15",
+    "cardName": "Salandit",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-15/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-16",
+    "cardNumber": "16",
+    "cardName": "Salazzle ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-16/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-17",
+    "cardNumber": "17",
+    "cardName": "Turtonator",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-17/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-18",
+    "cardNumber": "18",
+    "cardName": "Seel",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-18/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-19",
+    "cardNumber": "19",
+    "cardName": "Dewgong",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-19/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-20",
+    "cardNumber": "20",
+    "cardName": "Staryu",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-20/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-21",
+    "cardNumber": "21",
+    "cardName": "Mega Starmie ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-21/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-22",
+    "cardNumber": "22",
+    "cardName": "Lapras ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-22/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-23",
+    "cardNumber": "23",
+    "cardName": "Amaura",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-23/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-24",
+    "cardNumber": "24",
+    "cardName": "Aurorus",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-24/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-25",
+    "cardNumber": "25",
+    "cardName": "Volcanion",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-25/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-26",
+    "cardNumber": "26",
+    "cardName": "Shinx",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-26/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-27",
+    "cardNumber": "27",
+    "cardName": "Luxio",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-27/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-28",
+    "cardNumber": "28",
+    "cardName": "Luxray",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-28/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-29",
+    "cardNumber": "29",
+    "cardName": "Dedenne",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-29/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-30",
+    "cardNumber": "30",
+    "cardName": "Clefairy",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-30/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-31",
+    "cardNumber": "31",
+    "cardName": "Mega Clefable ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-31/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-32",
+    "cardNumber": "32",
+    "cardName": "Mawile",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-32/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-33",
+    "cardNumber": "33",
+    "cardName": "Espurr",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-33/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-34",
+    "cardNumber": "34",
+    "cardName": "Meowstic",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-34/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-35",
+    "cardNumber": "35",
+    "cardName": "Spritzee",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-35/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-36",
+    "cardNumber": "36",
+    "cardName": "Aromatisse",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-36/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-37",
+    "cardNumber": "37",
+    "cardName": "Nosepass",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-37/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-38",
+    "cardNumber": "38",
+    "cardName": "Probopass",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-38/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-39",
+    "cardNumber": "39",
+    "cardName": "Hippopotas",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-39/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-40",
+    "cardNumber": "40",
+    "cardName": "Hippowdon",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-40/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-41",
+    "cardNumber": "41",
+    "cardName": "Landorus",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-41/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-42",
+    "cardNumber": "42",
+    "cardName": "Binacle",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-42/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-43",
+    "cardNumber": "43",
+    "cardName": "Barbaracle",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-43/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-44",
+    "cardNumber": "44",
+    "cardName": "Tyrunt",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-44/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-45",
+    "cardNumber": "45",
+    "cardName": "Tyrantrum",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-45/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-46",
+    "cardNumber": "46",
+    "cardName": "Hawlucha",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-46/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-47",
+    "cardNumber": "47",
+    "cardName": "Mega Zygarde ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-47/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-48",
+    "cardNumber": "48",
+    "cardName": "Gastly",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-48/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-49",
+    "cardNumber": "49",
+    "cardName": "Haunter",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-49/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-50",
+    "cardNumber": "50",
+    "cardName": "Gengar",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-50/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-51",
+    "cardNumber": "51",
+    "cardName": "Skorupi",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-51/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-52",
+    "cardNumber": "52",
+    "cardName": "Drapion",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-52/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-53",
+    "cardNumber": "53",
+    "cardName": "Yveltal ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-53/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-54",
+    "cardNumber": "54",
+    "cardName": "Chien-Pao",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-54/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-55",
+    "cardNumber": "55",
+    "cardName": "Mega Skarmory ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-55/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-56",
+    "cardNumber": "56",
+    "cardName": "Honedge",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-56/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-57",
+    "cardNumber": "57",
+    "cardName": "Doublade",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-57/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-58",
+    "cardNumber": "58",
+    "cardName": "Aegislash",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-58/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-59",
+    "cardNumber": "59",
+    "cardName": "Klefki",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-59/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-60",
+    "cardNumber": "60",
+    "cardName": "Rattata",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-60/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-61",
+    "cardNumber": "61",
+    "cardName": "Raticate",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-61/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-62",
+    "cardNumber": "62",
+    "cardName": "Meowth ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-62/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-63",
+    "cardNumber": "63",
+    "cardName": "Snorlax",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-63/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-64",
+    "cardNumber": "64",
+    "cardName": "Bunnelby",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-64/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-65",
+    "cardNumber": "65",
+    "cardName": "Diggersby",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-65/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-66",
+    "cardNumber": "66",
+    "cardName": "Fletchling",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-66/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-67",
+    "cardNumber": "67",
+    "cardName": "Furfrou",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-67/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-68",
+    "cardNumber": "68",
+    "cardName": "Antique Jaw Fossil",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-68/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-69",
+    "cardNumber": "69",
+    "cardName": "Antique Sail Fossil",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-69/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-70",
+    "cardNumber": "70",
+    "cardName": "Core Memory",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-70/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-71",
+    "cardNumber": "71",
+    "cardName": "Crushing Hammer",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-71/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-72",
+    "cardNumber": "72",
+    "cardName": "Energy Search",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-72/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-73",
+    "cardNumber": "73",
+    "cardName": "Energy Swatter",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-73/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-74",
+    "cardNumber": "74",
+    "cardName": "Hole-Digging Shovel",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-74/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-75",
+    "cardNumber": "75",
+    "cardName": "Jacinthe",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-75/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-76",
+    "cardNumber": "76",
+    "cardName": "Judge",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-76/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-77",
+    "cardNumber": "77",
+    "cardName": "Lumiose City",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-77/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-78",
+    "cardNumber": "78",
+    "cardName": "Lumiose Galette",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-78/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-79",
+    "cardNumber": "79",
+    "cardName": "Naveen",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-79/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-80",
+    "cardNumber": "80",
+    "cardName": "Poké Ball",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-80/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-81",
+    "cardNumber": "81",
+    "cardName": "Poké Pad",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-81/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-82",
+    "cardNumber": "82",
+    "cardName": "Pokémon Catcher",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-82/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-83",
+    "cardNumber": "83",
+    "cardName": "Potion",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-83/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-84",
+    "cardNumber": "84",
+    "cardName": "Rosa's Encouragement",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-84/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-85",
+    "cardNumber": "85",
+    "cardName": "Tarragon",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-85/large",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-86",
+    "cardNumber": "86",
+    "cardName": "Growing Grass Energy",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-86/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-87",
+    "cardNumber": "87",
+    "cardName": "Rocky Fighting Energy",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-87/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-88",
+    "cardNumber": "88",
+    "cardName": "Telepathic Psychic Energy",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-88/large",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "me3-89",
+    "cardNumber": "89",
+    "cardName": "Spewpa",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-89/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-90",
+    "cardNumber": "90",
+    "cardName": "Rowlet",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-90/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-91",
+    "cardNumber": "91",
+    "cardName": "Talonflame",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-91/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-92",
+    "cardNumber": "92",
+    "cardName": "Aurorus",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-92/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-93",
+    "cardNumber": "93",
+    "cardName": "Dedenne",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-93/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-94",
+    "cardNumber": "94",
+    "cardName": "Clefairy",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-94/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-95",
+    "cardNumber": "95",
+    "cardName": "Espurr",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-95/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-96",
+    "cardNumber": "96",
+    "cardName": "Probopass",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-96/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-97",
+    "cardNumber": "97",
+    "cardName": "Drapion",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-97/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-98",
+    "cardNumber": "98",
+    "cardName": "Doublade",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-98/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-99",
+    "cardNumber": "99",
+    "cardName": "Raticate",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-99/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-100",
+    "cardNumber": "100",
+    "cardName": "Decidueye ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-100/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-101",
+    "cardNumber": "101",
+    "cardName": "Salazzle ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-101/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-102",
+    "cardNumber": "102",
+    "cardName": "Mega Starmie ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-102/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-103",
+    "cardNumber": "103",
+    "cardName": "Mega Clefable ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-103/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-104",
+    "cardNumber": "104",
+    "cardName": "Mega Zygarde ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-104/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-105",
+    "cardNumber": "105",
+    "cardName": "Yveltal ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-105/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-106",
+    "cardNumber": "106",
+    "cardName": "Mega Skarmory ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-106/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-107",
+    "cardNumber": "107",
+    "cardName": "Meowth ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-107/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-108",
+    "cardNumber": "108",
+    "cardName": "Energy Recycler",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-108/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-109",
+    "cardNumber": "109",
+    "cardName": "Forest of Vitality",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-109/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-110",
+    "cardNumber": "110",
+    "cardName": "Jacinthe",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-110/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-111",
+    "cardNumber": "111",
+    "cardName": "Lumiose City",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-111/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-112",
+    "cardNumber": "112",
+    "cardName": "Naveen",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-112/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-113",
+    "cardNumber": "113",
+    "cardName": "Poké Pad",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-113/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-114",
+    "cardNumber": "114",
+    "cardName": "Rosa's Encouragement",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-114/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-115",
+    "cardNumber": "115",
+    "cardName": "Sacred Ash",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-115/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-116",
+    "cardNumber": "116",
+    "cardName": "Tarragon",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-116/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-117",
+    "cardNumber": "117",
+    "cardName": "Wondrous Patch",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-117/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-118",
+    "cardNumber": "118",
+    "cardName": "Mega Starmie ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-118/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-119",
+    "cardNumber": "119",
+    "cardName": "Mega Clefable ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-119/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-120",
+    "cardNumber": "120",
+    "cardName": "Mega Zygarde ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-120/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-121",
+    "cardNumber": "121",
+    "cardName": "Meowth ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-121/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-122",
+    "cardNumber": "122",
+    "cardName": "Jacinthe",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-122/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-123",
+    "cardNumber": "123",
+    "cardName": "Rosa's Encouragement",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-123/large",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "me3-124",
+    "cardNumber": "124",
+    "cardName": "Mega Zygarde ex",
+    "imageUrl": "https://images.scrydex.com/pokemon/me3-124/large",
+    "variants": [
+      "holo"
+    ]
+  }
+]

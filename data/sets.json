@@ -1,0 +1,335 @@
+[
+  {
+    "setCode": "me4",
+    "setName": "Chaos Rising",
+    "seriesName": "Mega Evolution",
+    "releaseDate": "2026/05/22",
+    "logoUrl": "https://images.scrydex.com/pokemon/me4-logo/logo",
+    "cardCount": 122,
+    "totalCollectibles": 198
+  },
+  {
+    "setCode": "me3",
+    "setName": "Perfect Order",
+    "seriesName": "Mega Evolution",
+    "releaseDate": "2026/03/27",
+    "logoUrl": "https://images.scrydex.com/pokemon/me3-logo/logo",
+    "cardCount": 124,
+    "totalCollectibles": 203
+  },
+  {
+    "setCode": "me2pt5",
+    "setName": "Ascended Heroes",
+    "seriesName": "Mega Evolution",
+    "releaseDate": "2026/01/30",
+    "logoUrl": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
+    "cardCount": 295,
+    "totalCollectibles": 613
+  },
+  {
+    "setCode": "me2",
+    "setName": "Phantasmal Flames",
+    "seriesName": "Mega Evolution",
+    "releaseDate": "2025/11/14",
+    "logoUrl": "https://images.pokemontcg.io/me2/logo.png",
+    "cardCount": 130,
+    "totalCollectibles": 214
+  },
+  {
+    "setCode": "me1",
+    "setName": "Mega Evolution",
+    "seriesName": "Mega Evolution",
+    "releaseDate": "2025/09/26",
+    "logoUrl": "https://images.pokemontcg.io/me1/logo.png",
+    "cardCount": 188,
+    "totalCollectibles": 310
+  },
+  {
+    "setCode": "zsv10pt5",
+    "setName": "Black Bolt",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2025/07/18",
+    "logoUrl": "https://images.pokemontcg.io/zsv10pt5/logo.png",
+    "cardCount": 172,
+    "totalCollectibles": 404
+  },
+  {
+    "setCode": "rsv10pt5",
+    "setName": "White Flare",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2025/07/18",
+    "logoUrl": "https://images.pokemontcg.io/rsv10pt5/logo.png",
+    "cardCount": 173,
+    "totalCollectibles": 405
+  },
+  {
+    "setCode": "sv10",
+    "setName": "Destined Rivals",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2025/05/30",
+    "logoUrl": "https://images.pokemontcg.io/sv10/logo.png",
+    "cardCount": 244,
+    "totalCollectibles": 409
+  },
+  {
+    "setCode": "sv9",
+    "setName": "Journey Together",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2025/03/28",
+    "logoUrl": "https://images.pokemontcg.io/sv9/logo.png",
+    "cardCount": 190,
+    "totalCollectibles": 333
+  },
+  {
+    "setCode": "sv8pt5",
+    "setName": "Prismatic Evolutions",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2025/01/17",
+    "logoUrl": "https://images.pokemontcg.io/sv8pt5/logo.png",
+    "cardCount": 180,
+    "totalCollectibles": 447
+  },
+  {
+    "setCode": "sv8",
+    "setName": "Surging Sparks",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2024/11/08",
+    "logoUrl": "https://images.pokemontcg.io/sv8/logo.png",
+    "cardCount": 252,
+    "totalCollectibles": 417
+  },
+  {
+    "setCode": "sv7",
+    "setName": "Stellar Crown",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2024/09/13",
+    "logoUrl": "https://images.pokemontcg.io/sv7/logo.png",
+    "cardCount": 175,
+    "totalCollectibles": 300
+  },
+  {
+    "setCode": "sv6pt5",
+    "setName": "Shrouded Fable",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2024/08/02",
+    "logoUrl": "https://images.pokemontcg.io/sv6pt5/logo.png",
+    "cardCount": 99,
+    "totalCollectibles": 154
+  },
+  {
+    "setCode": "sv6",
+    "setName": "Twilight Masquerade",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2024/05/24",
+    "logoUrl": "https://images.pokemontcg.io/sv6/logo.png",
+    "cardCount": 226,
+    "totalCollectibles": 373
+  },
+  {
+    "setCode": "sv5",
+    "setName": "Temporal Forces",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2024/03/22",
+    "logoUrl": "https://images.pokemontcg.io/sv5/logo.png",
+    "cardCount": 218,
+    "totalCollectibles": 358
+  },
+  {
+    "setCode": "sv4pt5",
+    "setName": "Paldean Fates",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2024/01/26",
+    "logoUrl": "https://images.pokemontcg.io/sv4pt5/logo.png",
+    "cardCount": 245,
+    "totalCollectibles": 326
+  },
+  {
+    "setCode": "sv4",
+    "setName": "Paradox Rift",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2023/11/03",
+    "logoUrl": "https://images.pokemontcg.io/sv4/logo.png",
+    "cardCount": 266,
+    "totalCollectibles": 428
+  },
+  {
+    "setCode": "sv3pt5",
+    "setName": "151",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2023/09/22",
+    "logoUrl": "https://images.pokemontcg.io/sv3pt5/logo.png",
+    "cardCount": 207,
+    "totalCollectibles": 360
+  },
+  {
+    "setCode": "sv3",
+    "setName": "Obsidian Flames",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2023/08/11",
+    "logoUrl": "https://images.pokemontcg.io/sv3/logo.png",
+    "cardCount": 230,
+    "totalCollectibles": 406
+  },
+  {
+    "setCode": "sv2",
+    "setName": "Paldea Evolved",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2023/06/09",
+    "logoUrl": "https://images.pokemontcg.io/sv2/logo.png",
+    "cardCount": 279,
+    "totalCollectibles": 455
+  },
+  {
+    "setCode": "sv1",
+    "setName": "Scarlet & Violet",
+    "seriesName": "Scarlet & Violet",
+    "releaseDate": "2023/03/31",
+    "logoUrl": "https://images.pokemontcg.io/sv1/logo.png",
+    "cardCount": 258,
+    "totalCollectibles": 444
+  },
+  {
+    "setCode": "swsh12pt5",
+    "setName": "Crown Zenith",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2023/01/20",
+    "logoUrl": "https://images.pokemontcg.io/swsh12pt5/logo.png",
+    "cardCount": 230,
+    "totalCollectibles": 342
+  },
+  {
+    "setCode": "swsh12",
+    "setName": "Silver Tempest",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2022/11/11",
+    "logoUrl": "https://images.pokemontcg.io/swsh12/logo.png",
+    "cardCount": 245,
+    "totalCollectibles": 387
+  },
+  {
+    "setCode": "swsh11",
+    "setName": "Lost Origin",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2022/09/09",
+    "logoUrl": "https://images.pokemontcg.io/swsh11/logo.png",
+    "cardCount": 247,
+    "totalCollectibles": 396
+  },
+  {
+    "setCode": "pgo",
+    "setName": "Pokémon GO",
+    "seriesName": "Pokémon GO",
+    "releaseDate": "2022/07/01",
+    "logoUrl": "https://images.pokemontcg.io/pgo/logo.png",
+    "cardCount": 88,
+    "totalCollectibles": 146
+  },
+  {
+    "setCode": "swsh10",
+    "setName": "Astral Radiance",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2022/05/27",
+    "logoUrl": "https://images.pokemontcg.io/swsh10/logo.png",
+    "cardCount": 246,
+    "totalCollectibles": 374
+  },
+  {
+    "setCode": "swsh9",
+    "setName": "Brilliant Stars",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2022/02/25",
+    "logoUrl": "https://images.pokemontcg.io/swsh9/logo.png",
+    "cardCount": 216,
+    "totalCollectibles": 340
+  },
+  {
+    "setCode": "swsh8",
+    "setName": "Fusion Strike",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2021/11/12",
+    "logoUrl": "https://images.pokemontcg.io/swsh8/logo.png",
+    "cardCount": 284,
+    "totalCollectibles": 501
+  },
+  {
+    "setCode": "swsh7",
+    "setName": "Evolving Skies",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2021/08/27",
+    "logoUrl": "https://images.pokemontcg.io/swsh7/logo.png",
+    "cardCount": 237,
+    "totalCollectibles": 369
+  },
+  {
+    "setCode": "swsh6",
+    "setName": "Chilling Reign",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2021/06/18",
+    "logoUrl": "https://images.pokemontcg.io/swsh6/logo.png",
+    "cardCount": 233,
+    "totalCollectibles": 369
+  },
+  {
+    "setCode": "swsh5",
+    "setName": "Battle Styles",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2021/03/19",
+    "logoUrl": "https://images.pokemontcg.io/swsh5/logo.png",
+    "cardCount": 183,
+    "totalCollectibles": 306
+  },
+  {
+    "setCode": "swsh45",
+    "setName": "Shining Fates",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2021/02/19",
+    "logoUrl": "https://images.pokemontcg.io/swsh45/logo.png",
+    "cardCount": 195,
+    "totalCollectibles": 241
+  },
+  {
+    "setCode": "swsh4",
+    "setName": "Vivid Voltage",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2020/11/13",
+    "logoUrl": "https://images.pokemontcg.io/swsh4/logo.png",
+    "cardCount": 203,
+    "totalCollectibles": 345
+  },
+  {
+    "setCode": "swsh35",
+    "setName": "Champion's Path",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2020/09/25",
+    "logoUrl": "https://images.pokemontcg.io/swsh35/logo.png",
+    "cardCount": 80,
+    "totalCollectibles": 134
+  },
+  {
+    "setCode": "swsh3",
+    "setName": "Darkness Ablaze",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2020/08/14",
+    "logoUrl": "https://images.pokemontcg.io/swsh3/logo.png",
+    "cardCount": 201,
+    "totalCollectibles": 356
+  },
+  {
+    "setCode": "swsh2",
+    "setName": "Rebel Clash",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2020/05/01",
+    "logoUrl": "https://images.pokemontcg.io/swsh2/logo.png",
+    "cardCount": 209,
+    "totalCollectibles": 360
+  },
+  {
+    "setCode": "swsh1",
+    "setName": "Sword & Shield",
+    "seriesName": "Sword & Shield",
+    "releaseDate": "2020/02/07",
+    "logoUrl": "https://images.pokemontcg.io/swsh1/logo.png",
+    "cardCount": 216,
+    "totalCollectibles": 381
+  }
+]

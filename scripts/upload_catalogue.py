@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-upload_catalogue.py — Upload PocketBinder catalogue data to Supabase.
+upload_catalogue.py — Upload Master Setting catalogue data to Supabase.
 
-Reads sets.json and per-set card JSON from a local data directory (defaults to
-the sibling PocketBinder repo), then:
+Reads sets.json and per-set card JSON from the local data directory, then:
   • Upserts rows into the `sets` Postgres table
   • Uploads per-set card JSON to Supabase Storage (cards/{setCode}.json)
   • Uploads set logos to Supabase Storage (logos/{setCode}.png)
@@ -22,7 +21,7 @@ Requires:
 Usage:
   python3 scripts/upload_catalogue.py
   python3 scripts/upload_catalogue.py --images
-  python3 scripts/upload_catalogue.py --data-dir /path/to/PocketBinder/data
+  python3 scripts/upload_catalogue.py --data-dir /path/to/data
   python3 scripts/upload_catalogue.py --sets sv1,sv2 --images
   python3 scripts/upload_catalogue.py --dry-run --images
 """
@@ -57,7 +56,7 @@ from supabase import create_client, Client
 
 # ── Defaults ───────────────────────────────────────────────────────────────────
 
-DEFAULT_DATA_DIR = Path(__file__).parent.parent.parent / "PocketBinder" / "data"
+DEFAULT_DATA_DIR = Path(__file__).parent.parent / "data"
 IMAGE_MAX_WIDTH  = 400
 IMAGE_QUALITY    = 82
 

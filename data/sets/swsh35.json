@@ -1,0 +1,776 @@
+[
+  {
+    "id": "swsh35-1",
+    "cardNumber": "1",
+    "cardName": "Venusaur V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/1_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-2",
+    "cardNumber": "2",
+    "cardName": "Weedle",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/2_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-3",
+    "cardNumber": "3",
+    "cardName": "Kakuna",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/3_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-4",
+    "cardNumber": "4",
+    "cardName": "Beedrill",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/4_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-5",
+    "cardNumber": "5",
+    "cardName": "Eldegoss V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/5_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-6",
+    "cardNumber": "6",
+    "cardName": "Vulpix",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/6_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-7",
+    "cardNumber": "7",
+    "cardName": "Victini",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/7_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-8",
+    "cardNumber": "8",
+    "cardName": "Incineroar V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/8_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-9",
+    "cardNumber": "9",
+    "cardName": "Sizzlipede",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/9_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-10",
+    "cardNumber": "10",
+    "cardName": "Centiskorch",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/10_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-11",
+    "cardNumber": "11",
+    "cardName": "Carvanha",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/11_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-12",
+    "cardNumber": "12",
+    "cardName": "Sharpedo",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/12_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-13",
+    "cardNumber": "13",
+    "cardName": "Wailord V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/13_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-14",
+    "cardNumber": "14",
+    "cardName": "Drednaw V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/14_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-15",
+    "cardNumber": "15",
+    "cardName": "Drednaw VMAX",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/15_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-16",
+    "cardNumber": "16",
+    "cardName": "Gardevoir V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/16_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-17",
+    "cardNumber": "17",
+    "cardName": "Gardevoir VMAX",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/17_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-18",
+    "cardNumber": "18",
+    "cardName": "Hatenna",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/18_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-19",
+    "cardNumber": "19",
+    "cardName": "Hattrem",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/19_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-20",
+    "cardNumber": "20",
+    "cardName": "Hatterene",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/20_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-21",
+    "cardNumber": "21",
+    "cardName": "Galarian Cursola V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/21_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-22",
+    "cardNumber": "22",
+    "cardName": "Alcremie V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/22_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-23",
+    "cardNumber": "23",
+    "cardName": "Alcremie VMAX",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/23_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-24",
+    "cardNumber": "24",
+    "cardName": "Machop",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/24_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-25",
+    "cardNumber": "25",
+    "cardName": "Machoke",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/25_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-26",
+    "cardNumber": "26",
+    "cardName": "Machamp",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/26_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-27",
+    "cardNumber": "27",
+    "cardName": "Lucario V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/27_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-28",
+    "cardNumber": "28",
+    "cardName": "Zygarde",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/28_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-29",
+    "cardNumber": "29",
+    "cardName": "Rockruff",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/29_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-30",
+    "cardNumber": "30",
+    "cardName": "Lycanroc",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/30_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-31",
+    "cardNumber": "31",
+    "cardName": "Rolycoly",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/31_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-32",
+    "cardNumber": "32",
+    "cardName": "Grapploct V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/32_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-33",
+    "cardNumber": "33",
+    "cardName": "Ekans",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/33_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-34",
+    "cardNumber": "34",
+    "cardName": "Arbok",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/34_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-35",
+    "cardNumber": "35",
+    "cardName": "Galarian Zigzagoon",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/35_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-36",
+    "cardNumber": "36",
+    "cardName": "Galarian Linoone",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/36_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-37",
+    "cardNumber": "37",
+    "cardName": "Galarian Obstagoon",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/37_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-38",
+    "cardNumber": "38",
+    "cardName": "Absol",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/38_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-39",
+    "cardNumber": "39",
+    "cardName": "Purrloin",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/39_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-40",
+    "cardNumber": "40",
+    "cardName": "Liepard",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/40_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-41",
+    "cardNumber": "41",
+    "cardName": "Scraggy",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/41_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-42",
+    "cardNumber": "42",
+    "cardName": "Scrafty",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/42_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-43",
+    "cardNumber": "43",
+    "cardName": "Trubbish",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/43_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-44",
+    "cardNumber": "44",
+    "cardName": "Inkay",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/44_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-45",
+    "cardNumber": "45",
+    "cardName": "Malamar",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/45_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-46",
+    "cardNumber": "46",
+    "cardName": "Nickit",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/46_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-47",
+    "cardNumber": "47",
+    "cardName": "Duraludon V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/47_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-48",
+    "cardNumber": "48",
+    "cardName": "Swablu",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/48_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-49",
+    "cardNumber": "49",
+    "cardName": "Altaria",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/49_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-50",
+    "cardNumber": "50",
+    "cardName": "Bede",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/50_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-51",
+    "cardNumber": "51",
+    "cardName": "Full Heal",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/51_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-52",
+    "cardNumber": "52",
+    "cardName": "Great Ball",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/52_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-53",
+    "cardNumber": "53",
+    "cardName": "Hop",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/53_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-54",
+    "cardNumber": "54",
+    "cardName": "Hyper Potion",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/54_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-55",
+    "cardNumber": "55",
+    "cardName": "Kabu",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/55_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-56",
+    "cardNumber": "56",
+    "cardName": "Marnie",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/56_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-57",
+    "cardNumber": "57",
+    "cardName": "Milo",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/57_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-58",
+    "cardNumber": "58",
+    "cardName": "Piers",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/58_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-59",
+    "cardNumber": "59",
+    "cardName": "Poké Ball",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/59_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-60",
+    "cardNumber": "60",
+    "cardName": "Pokémon Center Lady",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/60_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-61",
+    "cardNumber": "61",
+    "cardName": "Potion",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/61_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-62",
+    "cardNumber": "62",
+    "cardName": "Professor's Research",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/62_hires.png",
+    "variants": [
+      "holo",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-63",
+    "cardNumber": "63",
+    "cardName": "Rotom Bike",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/63_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-64",
+    "cardNumber": "64",
+    "cardName": "Rotom Phone",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/64_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-65",
+    "cardNumber": "65",
+    "cardName": "Sonia",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/65_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-66",
+    "cardNumber": "66",
+    "cardName": "Suspicious Food Tin",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/66_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-67",
+    "cardNumber": "67",
+    "cardName": "Team Yell Grunt",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/67_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-68",
+    "cardNumber": "68",
+    "cardName": "Turffield Stadium",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/68_hires.png",
+    "variants": [
+      "normal",
+      "reverse_holo"
+    ]
+  },
+  {
+    "id": "swsh35-69",
+    "cardNumber": "69",
+    "cardName": "Drednaw V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/69_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-70",
+    "cardNumber": "70",
+    "cardName": "Gardevoir V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/70_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-71",
+    "cardNumber": "71",
+    "cardName": "Galarian Cursola V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/71_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-72",
+    "cardNumber": "72",
+    "cardName": "Grapploct V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/72_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-73",
+    "cardNumber": "73",
+    "cardName": "Hop",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/73_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-74",
+    "cardNumber": "74",
+    "cardName": "Charizard VMAX",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/74_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-75",
+    "cardNumber": "75",
+    "cardName": "Drednaw VMAX",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/75_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-76",
+    "cardNumber": "76",
+    "cardName": "Gardevoir VMAX",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/76_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-77",
+    "cardNumber": "77",
+    "cardName": "Kabu",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/77_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-78",
+    "cardNumber": "78",
+    "cardName": "Piers",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/78_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-79",
+    "cardNumber": "79",
+    "cardName": "Charizard V",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/79_hires.png",
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "swsh35-80",
+    "cardNumber": "80",
+    "cardName": "Suspicious Food Tin",
+    "imageUrl": "https://images.pokemontcg.io/swsh35/80_hires.png",
+    "variants": [
+      "holo"
+    ]
+  }
+]
