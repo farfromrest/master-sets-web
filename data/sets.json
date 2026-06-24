@@ -45,6 +45,15 @@
     "totalCollectibles": 310
   },
   {
+    "setCode": "mep",
+    "setName": "MEP Black Star Promos",
+    "seriesName": "Mega Evolution",
+    "releaseDate": "2025/09/26",
+    "logoUrl": null,
+    "cardCount": 88,
+    "totalCollectibles": 111
+  },
+  {
     "setCode": "zsv10pt5",
     "setName": "Black Bolt",
     "seriesName": "Scarlet & Violet",
