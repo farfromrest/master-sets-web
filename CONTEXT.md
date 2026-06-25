@@ -92,6 +92,10 @@ _Avoid_: commit, save, confirm, done
 A visual padding cell at the end of the last binder page, added when the number of slots doesn't fill the page evenly. Has no collectible and no interaction.
 _Avoid_: empty slot, empty card
 
+**iOS App**:
+The iPhone companion to the web tracker. Same product and brand (Master Setting). Tracks sets and ownership locally via SwiftData with iCloud sync via CloudKit. No shared backend with the web app — card metadata is bundled with the app, card images fetched from public APIs. Privacy policy hosted at `/privacy` on this web app.
+_Avoid_: mobile app, PocketBinder (dev directory name)
+
 ## Operations
 
 ### Database migrations

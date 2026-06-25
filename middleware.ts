@@ -29,7 +29,7 @@ export async function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl
 
-  if (!user && pathname !== '/' && !pathname.startsWith('/auth')) {
+  if (!user && pathname !== '/' && !pathname.startsWith('/auth') && pathname !== '/privacy') {
     const url = request.nextUrl.clone()
     url.pathname = '/'
     return NextResponse.redirect(url)
