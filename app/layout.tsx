@@ -12,9 +12,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? ''
+
 export const metadata: Metadata = {
-  title: "Master Setting",
-  description: "Track your Pokémon TCG master sets.",
+  title: {
+    default: "Master Setting",
+    template: "%s | Master Setting",
+  },
+  description:
+    "Track your Pokémon TCG master set collection — mark which cards you own, see what's missing, and follow your progress from first card to complete.",
+  keywords: ["Pokémon TCG", "master set", "card collection tracker", "Pokémon card tracker", "binder tracker", "set completion"],
+  metadataBase: baseUrl ? new URL(baseUrl) : null,
+  openGraph: {
+    title: "Master Setting",
+    description:
+      "Track your Pokémon TCG master set collection — mark which cards you own, see what's missing, and follow your progress.",
+    type: "website",
+    url: baseUrl || undefined,
+  },
+  twitter: {
+    card: "summary",
+    title: "Master Setting",
+    description:
+      "Track your Pokémon TCG master set collection — mark which cards you own, see what's missing, and follow your progress.",
+  },
   manifest: "/manifest.json",
 };
 
