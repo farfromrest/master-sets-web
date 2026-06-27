@@ -34,6 +34,7 @@ export default async function LandingPage() {
         flipped={false}
       />
       <ClosingCTA isLoggedIn={isLoggedIn} />
+      <Footer />
     </main>
   )
 }
@@ -144,6 +145,22 @@ function ClosingCTA({ isLoggedIn }: { isLoggedIn: boolean }) {
       </p>
       <CTA isLoggedIn={isLoggedIn} />
     </section>
+  )
+}
+
+function Footer() {
+  return (
+    <footer className="px-6 py-8 flex flex-col items-center gap-1 text-text-secondary text-xs">
+      <p>
+        Made by{' '}
+        <a
+          href="mailto:derek@farfromrest.com"
+          className="underline underline-offset-2 hover:text-text-primary transition-colors"
+        >
+          Derek
+        </a>
+      </p>
+    </footer>
   )
 }
 
