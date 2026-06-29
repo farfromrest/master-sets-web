@@ -20,7 +20,7 @@ export async function updateTrackedSetPreferences(
     .update(updates)
     .eq('user_id', user.id)
     .eq('set_code', setCode)
-    .then()
+    .throwOnError()
 }
 
 export async function trackSet(setCode: string) {

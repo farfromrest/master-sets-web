@@ -20,6 +20,9 @@ export type TrackedSetSummary = {
 
 type AllTrackedSetRow = {
   set_code: string
+  column_count: number
+  focus: string
+  is_list: boolean | null
   sets: {
     set_name: string
     total_slots: number
@@ -61,36 +64,31 @@ export default async function BinderPage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
 
-  const [{ data: trackedSet }, { data: setMeta }, { data: ownedRows }, { data: allTrackedSetRows }, { data: ownedCounts }] = await Promise.all([
+  const [{ data: allTrackedSetRows }, { data: ownedRows }, { data: ownedCounts }] = await Promise.all([
     supabase
       .from('tracked_sets')
-      .select('column_count, focus, is_list')
-      .eq('user_id', user.id)
-      .eq('set_code', setCode)
-      .single(),
-    supabase
-      .from('sets')
-      .select('set_name')
-      .eq('set_code', setCode)
-      .single(),
+      .select('set_code, column_count, focus, is_list, sets(set_name, total_slots)')
+      .eq('user_id', user.id),
     supabase
       .from('owned_slots')
       .select('slot_id')
       .eq('user_id', user.id)
       .eq('set_code', setCode),
-    supabase
-      .from('tracked_sets')
-      .select('set_code, sets(set_name, total_slots)')
-      .eq('user_id', user.id),
     supabase.rpc('get_owned_slot_counts', { p_user_id: user.id }),
   ])
+
+  const allRows = (allTrackedSetRows ?? []) as unknown as AllTrackedSetRow[]
+  const currentRow = allRows.find((r) => r.set_code === setCode)
+
+  if (!currentRow) redirect('/dashboard')
 
   const ownedBySet: Record<string, number> = {}
   for (const row of ownedCounts ?? []) {
     ownedBySet[row.set_code] = Number(row.owned_count)
   }
+
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-  const trackedSets: TrackedSetSummary[] = ((allTrackedSetRows ?? []) as unknown as AllTrackedSetRow[]).map((ts) => ({
+  const trackedSets: TrackedSetSummary[] = allRows.map((ts) => ({
     setCode: ts.set_code,
     setName: ts.sets.set_name,
     logoUrl: `${supabaseUrl}/storage/v1/object/public/logos/${ts.set_code}.png`,
@@ -98,23 +96,21 @@ export default async function BinderPage({
     total: ts.sets.total_slots,
   }))
 
-  if (!trackedSet) redirect('/dashboard')
-
-  const cardJsonUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/cards/${setCode}.json`
+  const cardJsonUrl = `${supabaseUrl}/storage/v1/object/public/cards/${setCode}.json`
   const cardRes = await fetch(cardJsonUrl, { next: { revalidate: 3600 } })
   const cards: CardData[] = cardRes.ok ? await cardRes.json() : []
 
   return (
     <BinderView
       setCode={setCode}
-      setName={setMeta?.set_name ?? setCode}
-      logoUrl={setMeta ? `${supabaseUrl}/storage/v1/object/public/logos/${setCode}.png` : null}
+      setName={currentRow.sets.set_name}
+      logoUrl={`${supabaseUrl}/storage/v1/object/public/logos/${setCode}.png`}
       trackedSets={trackedSets}
       slots={buildSlots(cards)}
       ownedSlotIds={(ownedRows ?? []).map((r) => r.slot_id)}
-      columnCount={trackedSet.column_count}
-      initialFocus={trackedSet.focus as 'all' | 'missing' | 'collected'}
-      initialIsList={trackedSet.is_list ?? false}
+      columnCount={currentRow.column_count}
+      initialFocus={currentRow.focus as 'all' | 'missing' | 'collected'}
+      initialIsList={currentRow.is_list ?? false}
     />
   )
 }

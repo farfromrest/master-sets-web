@@ -12,10 +12,7 @@ export async function GET() {
       .select('set_code, column_count, focus, date_added')
       .eq('user_id', user.id)
       .order('date_added', { ascending: false }),
-    supabase
-      .from('owned_slots')
-      .select('slot_id, set_code, date_owned')
-      .eq('user_id', user.id),
+    supabase.rpc('get_owned_slots_export', { p_user_id: user.id }),
     supabase
       .from('sets')
       .select('set_code, set_name'),
