@@ -33,20 +33,17 @@ export default async function DashboardPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
 
-  const [{ data: trackedSets }, { data: ownedSlots }] = await Promise.all([
+  const [{ data: trackedSets }, { data: ownedCounts }] = await Promise.all([
     supabase
-      .from('tracked_sets')
-      .select('id, set_code, sets(set_name, series_name, release_date, total_slots)')
-      .eq('user_id', user.id),
-    supabase
-      .from('owned_slots')
-      .select('set_code')
-      .eq('user_id', user.id),
+    .from('tracked_sets')
+    .select('id, set_code, sets(set_name, series_name, release_date, total_slots)')
+    .eq('user_id', user.id),
+    supabase.rpc('get_owned_slot_counts', { p_user_id: user.id }),
   ])
 
   const ownedBySet: Record<string, number> = {}
-  for (const row of ownedSlots ?? []) {
-    ownedBySet[row.set_code] = (ownedBySet[row.set_code] ?? 0) + 1
+  for (const row of ownedCounts ?? []) {
+    ownedBySet[row.set_code] = Number(row.owned_count)
   }
 
   const rows = ((trackedSets ?? []) as unknown as TrackedSetRow[]).map((ts) => ({

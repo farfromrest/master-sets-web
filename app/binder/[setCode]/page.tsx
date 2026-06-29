@@ -61,7 +61,7 @@ export default async function BinderPage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
 
-  const [{ data: trackedSet }, { data: setMeta }, { data: ownedRows }, { data: allTrackedSetRows }, { data: allOwnedSlots }] = await Promise.all([
+  const [{ data: trackedSet }, { data: setMeta }, { data: ownedRows }, { data: allTrackedSetRows }, { data: ownedCounts }] = await Promise.all([
     supabase
       .from('tracked_sets')
       .select('column_count, focus, is_list')
@@ -82,15 +82,12 @@ export default async function BinderPage({
       .from('tracked_sets')
       .select('set_code, sets(set_name, total_slots)')
       .eq('user_id', user.id),
-    supabase
-      .from('owned_slots')
-      .select('set_code')
-      .eq('user_id', user.id),
+    supabase.rpc('get_owned_slot_counts', { p_user_id: user.id }),
   ])
 
   const ownedBySet: Record<string, number> = {}
-  for (const row of allOwnedSlots ?? []) {
-    ownedBySet[row.set_code] = (ownedBySet[row.set_code] ?? 0) + 1
+  for (const row of ownedCounts ?? []) {
+    ownedBySet[row.set_code] = Number(row.owned_count)
   }
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
   const trackedSets: TrackedSetSummary[] = ((allTrackedSetRows ?? []) as unknown as AllTrackedSetRow[]).map((ts) => ({

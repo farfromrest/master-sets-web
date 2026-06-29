@@ -15,14 +15,14 @@ export async function toggleSlotOwned(
     await supabase
       .from('owned_slots')
       .upsert({ user_id: user.id, slot_id: slotId, set_code: setCode }, { onConflict: 'user_id,slot_id' })
-      .then()
+      .throwOnError()
   } else {
     await supabase
       .from('owned_slots')
       .delete()
       .eq('user_id', user.id)
       .eq('slot_id', slotId)
-      .then()
+      .throwOnError()
   }
 }
 
@@ -35,27 +35,19 @@ export async function applyChanges(
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) throw new Error('Not authenticated')
 
-  const ops: PromiseLike<unknown>[] = []
-
   if (toAdd.length > 0) {
-    ops.push(
-      supabase.from('owned_slots').upsert(
-        toAdd.map((slotId) => ({ user_id: user.id, slot_id: slotId, set_code: setCode })),
-        { onConflict: 'user_id,slot_id' }
-      ).then()
-    )
+    await supabase.from('owned_slots').upsert(
+      toAdd.map((slotId) => ({ user_id: user.id, slot_id: slotId, set_code: setCode })),
+      { onConflict: 'user_id,slot_id' }
+    ).throwOnError()
   }
 
   if (toRemove.length > 0) {
-    ops.push(
-      supabase.from('owned_slots')
-        .delete()
-        .eq('user_id', user.id)
-        .eq('set_code', setCode)
-        .in('slot_id', toRemove)
-        .then()
-    )
+    await supabase.from('owned_slots')
+      .delete()
+      .eq('user_id', user.id)
+      .eq('set_code', setCode)
+      .in('slot_id', toRemove)
+      .throwOnError()
   }
-
-  await Promise.all(ops)
 }
