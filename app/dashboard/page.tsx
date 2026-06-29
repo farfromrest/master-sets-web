@@ -138,7 +138,7 @@ export default async function DashboardPage() {
                   {group.sets.map((ts) => {
                     const total   = ts.sets.total_slots
                     const owned   = ts.owned
-                    const pct     = total > 0 ? Math.round((owned / total) * 100) : 0
+                    const pct     = total > 0 ? Math.floor((owned / total) * 100) : 0
                     const done    = total > 0 && owned === total
 
                     return (

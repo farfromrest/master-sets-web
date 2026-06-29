@@ -721,7 +721,7 @@ export function BinderView({
             <div className="px-4 pb-8 pt-2 max-h-[70vh] overflow-y-auto space-y-1">
               {trackedSets.map((ts) => {
                 const isCurrent = ts.setCode === setCode
-                const pct = ts.total > 0 ? Math.round((ts.owned / ts.total) * 100) : 0
+                const pct = ts.total > 0 ? Math.floor((ts.owned / ts.total) * 100) : 0
                 return (
                   <Link
                     key={ts.setCode}
