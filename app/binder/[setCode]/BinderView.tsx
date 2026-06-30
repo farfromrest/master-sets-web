@@ -7,6 +7,7 @@ import { applyChanges } from '@/app/actions/slots'
 import { updateTrackedSetPreferences } from '@/app/actions/sets'
 import { CardCell, EmptyPocket } from './CardCell'
 import { CardDetail } from './CardDetail'
+import { Confetti } from './Confetti'
 import { ArrowLeft, ChevronDown, Ellipsis, Search, SlidersHorizontal, X } from 'lucide-react'
 import type { Slot, TrackedSetSummary } from './page'
 
@@ -58,10 +59,22 @@ export function BinderView({
   const [searchQuery, setSearchQuery] = useState('')
   const searchInputRef = useRef<HTMLInputElement>(null)
   const [isPending, startTransition] = useTransition()
+  const [showConfetti, setShowConfetti] = useState(false)
+  const prevOwnedSizeRef = useRef(ownedIds.size)
 
   useEffect(() => {
     if (searchActive) searchInputRef.current?.focus()
   }, [searchActive])
+
+  useEffect(() => {
+    const prev = prevOwnedSizeRef.current
+    prevOwnedSizeRef.current = ownedIds.size
+    if (slots.length > 0 && ownedIds.size >= slots.length && prev < slots.length) {
+      setShowConfetti(true)
+      const t = setTimeout(() => setShowConfetti(false), 5000)
+      return () => clearTimeout(t)
+    }
+  }, [ownedIds.size, slots.length])
 
   useEffect(() => {
     if (!searchQuery) return
@@ -782,6 +795,7 @@ export function BinderView({
           }}
         />
       )}
+      {showConfetti && <Confetti />}
     </div>
   )
 }

@@ -9,20 +9,30 @@ import { signOut } from '@/app/actions/auth'
 
 export function SettingsClient({
   defaultColumnCount,
+  defaultIsList,
   email,
 }: {
   defaultColumnCount: number
+  defaultIsList: boolean
   email: string
 }) {
   const [cols, setCols] = useState(defaultColumnCount)
+  const [isList, setIsList] = useState(defaultIsList)
   const [resetConfirm, setResetConfirm] = useState(false)
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
 
+  function handleIsListChange(val: boolean) {
+    setIsList(val)
+    startTransition(async () => {
+      await updateDefaultLayout(cols, val)
+    })
+  }
+
   function handleColsChange(c: number) {
     setCols(c)
     startTransition(async () => {
-      await updateDefaultLayout(c)
+      await updateDefaultLayout(c, isList)
     })
   }
 
@@ -53,22 +63,43 @@ export function SettingsClient({
         {/* Default Layout */}
         <section className="space-y-3">
           <p className="text-[10px] font-semibold text-text-secondary uppercase tracking-widest">Default Layout</p>
-          <div className="rounded-xl bg-binder-surface border border-white/[.06] p-4 space-y-3">
-            <p className="text-xs text-text-secondary">Column count applied when you track a new set.</p>
-            <div className="flex gap-2">
-              {[3, 4].map((c) => (
-                <button
-                  key={c}
-                  onClick={() => handleColsChange(c)}
-                  className={`flex-1 py-2.5 rounded-xl text-xs font-medium transition-colors ${
-                    cols === c
-                      ? 'bg-brand-cyan/20 border border-brand-cyan/40 text-brand-cyan'
-                      : 'bg-binder-elevated border border-white/[.06] text-text-secondary hover:text-text-primary'
-                  }`}
-                >
-                  {c} columns
-                </button>
-              ))}
+          <div className="rounded-xl bg-binder-surface border border-white/[.06] p-4 space-y-4">
+            <p className="text-xs text-text-secondary">Applied when you track a new set.</p>
+            <div className="space-y-2">
+              <p className="text-[10px] text-text-secondary uppercase tracking-widest">View</p>
+              <div className="flex gap-2">
+                {([false, true] as const).map((listVal) => (
+                  <button
+                    key={String(listVal)}
+                    onClick={() => handleIsListChange(listVal)}
+                    className={`flex-1 py-2.5 rounded-xl text-xs font-medium transition-colors ${
+                      isList === listVal
+                        ? 'bg-brand-cyan/20 border border-brand-cyan/40 text-brand-cyan'
+                        : 'bg-binder-elevated border border-white/[.06] text-text-secondary hover:text-text-primary'
+                    }`}
+                  >
+                    {listVal ? 'List' : 'Binder'}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-2">
+              <p className="text-[10px] text-text-secondary uppercase tracking-widest">Columns</p>
+              <div className="flex gap-2">
+                {[3, 4].map((c) => (
+                  <button
+                    key={c}
+                    onClick={() => handleColsChange(c)}
+                    className={`flex-1 py-2.5 rounded-xl text-xs font-medium transition-colors ${
+                      cols === c
+                        ? 'bg-brand-cyan/20 border border-brand-cyan/40 text-brand-cyan'
+                        : 'bg-binder-elevated border border-white/[.06] text-text-secondary hover:text-text-primary'
+                    }`}
+                  >
+                    {c === 3 ? '9-pocket' : '12-pocket'}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </section>

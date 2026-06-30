@@ -34,13 +34,25 @@ export async function trackSet(setCode: string) {
     .eq('user_id', user.id)
     .single()
 
-  const columnCount = parseInt(profile?.default_layout ?? '3') || 3
+  const raw = profile?.default_layout ?? '3'
+  const [colStr, mode] = raw.split('-')
+  const columnCount = parseInt(colStr) || 3
+  const isList = mode === 'list'
 
   const { error } = await supabase
     .from('tracked_sets')
-    .insert({ user_id: user.id, set_code: setCode, column_count: columnCount })
+    .insert({ user_id: user.id, set_code: setCode, column_count: columnCount, is_list: isList })
 
   if (error && error.code !== '23505') {
     throw new Error(error.message)
   }
+}
+
+export async function untrackSet(setCode: string) {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error('Not authenticated')
+
+  await supabase.from('owned_slots').delete().eq('user_id', user.id).eq('set_code', setCode).throwOnError()
+  await supabase.from('tracked_sets').delete().eq('user_id', user.id).eq('set_code', setCode).throwOnError()
 }

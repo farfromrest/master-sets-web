@@ -146,17 +146,17 @@ export function CardDetail({
           <button
             onClick={handleToggle}
             disabled={isPending}
-            className={`flex items-center justify-center gap-2.5 w-full rounded-2xl border px-6 py-4 text-base font-semibold transition-all disabled:opacity-50 ${
+            className={`inline-flex items-center gap-1.5 rounded-lg border px-4 py-2 text-sm font-medium transition-all disabled:opacity-50 ${
               isOwned
-                ? 'bg-brand-cyan/15 border-brand-cyan/30 text-brand-cyan'
-                : 'bg-white/[.04] border-white/[.12] text-text-secondary hover:border-white/20 hover:text-text-primary'
+                ? 'border-brand-cyan/40 text-brand-cyan'
+                : 'border-white/[.20] text-text-secondary hover:border-white/30 hover:text-text-primary'
             }`}
             aria-pressed={isOwned}
             aria-label={isOwned ? 'Collected' : 'Not collected'}
           >
             {isOwned
-              ? <CheckCircle2 size={20} className="flex-shrink-0" />
-              : <Circle size={20} className="flex-shrink-0" />
+              ? <CheckCircle2 size={16} className="flex-shrink-0" />
+              : <Circle size={16} className="flex-shrink-0" />
             }
             Collected
           </button>

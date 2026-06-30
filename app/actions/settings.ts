@@ -2,14 +2,16 @@
 
 import { createClient } from '@/utils/supabase/server'
 
-export async function updateDefaultLayout(columnCount: number) {
+export async function updateDefaultLayout(columnCount: number, isList: boolean) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) throw new Error('Not authenticated')
 
+  const value = isList ? `${columnCount}-list` : String(columnCount)
+
   await supabase
     .from('profiles')
-    .update({ default_layout: String(columnCount) })
+    .update({ default_layout: value })
     .eq('user_id', user.id)
     .throwOnError()
 }

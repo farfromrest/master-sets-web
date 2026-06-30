@@ -13,11 +13,15 @@ export default async function SettingsPage() {
     .eq('user_id', user.id)
     .single()
 
-  const defaultColumnCount = parseInt(profile?.default_layout ?? '3') || 3
+  const raw = profile?.default_layout ?? '3'
+  const [colStr, mode] = raw.split('-')
+  const defaultColumnCount = parseInt(colStr) || 3
+  const defaultIsList = mode === 'list'
 
   return (
     <SettingsClient
       defaultColumnCount={defaultColumnCount}
+      defaultIsList={defaultIsList}
       email={user.email ?? ''}
     />
   )
