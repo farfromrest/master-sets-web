@@ -47,12 +47,3 @@ export async function trackSet(setCode: string) {
     throw new Error(error.message)
   }
 }
-
-export async function untrackSet(setCode: string) {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) throw new Error('Not authenticated')
-
-  await supabase.from('owned_slots').delete().eq('user_id', user.id).eq('set_code', setCode).throwOnError()
-  await supabase.from('tracked_sets').delete().eq('user_id', user.id).eq('set_code', setCode).throwOnError()
-}

@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
-import { LayoutGrid, Plus, Settings } from 'lucide-react'
+import { BadgeCheck, LayoutGrid, Plus, Settings } from 'lucide-react'
 import { createClient } from '@/utils/supabase/server'
 import { SignOutButton } from './SignOutButton'
-import { DashboardSetRow } from './DashboardSetRow'
-
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!
 
@@ -137,16 +135,59 @@ export default async function DashboardPage() {
                   {group.seriesName}
                 </h2>
                 <div className="space-y-2">
-                  {group.sets.map((ts) => (
-                    <DashboardSetRow
-                      key={ts.id}
-                      setCode={ts.set_code}
-                      setName={ts.sets.set_name}
-                      logoUrl={logoUrl(ts.set_code)}
-                      owned={ts.owned}
-                      total={ts.sets.total_slots}
-                    />
-                  ))}
+                  {group.sets.map((ts) => {
+                    const total = ts.sets.total_slots
+                    const owned = ts.owned
+                    const pct = total > 0 ? Math.floor((owned / total) * 100) : 0
+                    const done = total > 0 && owned === total
+
+                    return (
+                      <Link
+                        key={ts.id}
+                        href={`/binder/${ts.set_code}`}
+                        className="flex items-center gap-3 rounded-xl bg-binder-surface border border-white/[.06] px-4 py-3 hover:border-white/[.12] hover:bg-binder-elevated transition-all group"
+                      >
+                        <div className="relative h-8 w-14 flex-shrink-0">
+                          <Image
+                            src={logoUrl(ts.set_code)}
+                            alt={ts.sets.set_name}
+                            fill
+                            className="object-contain"
+                            sizes="56px"
+                            unoptimized
+                          />
+                        </div>
+
+                        <div className="flex-1 min-w-0 space-y-1.5">
+                          <span className="block text-sm font-semibold text-text-primary truncate">
+                            {ts.sets.set_name}
+                          </span>
+                          <div className="flex items-center">
+                            <span className="text-xs text-text-secondary tabular-nums">
+                              {owned} / {total} collected
+                            </span>
+                            <div className="flex-1" />
+                            {done ? (
+                              <span className="flex items-center gap-1 text-xs font-semibold text-brand-cyan flex-shrink-0">
+                                <BadgeCheck size={12} />
+                                Complete
+                              </span>
+                            ) : (
+                              <span className="text-xs text-text-secondary tabular-nums flex-shrink-0">
+                                {pct}%
+                              </span>
+                            )}
+                          </div>
+                          <div className="h-1.5 rounded-full bg-white/[.08] overflow-hidden">
+                            <div
+                              className="h-full rounded-full bg-gradient-to-r from-brand-magenta via-brand-violet to-brand-cyan transition-all"
+                              style={{ width: `${pct}%` }}
+                            />
+                          </div>
+                        </div>
+                      </Link>
+                    )
+                  })}
                 </div>
               </section>
             ))}
